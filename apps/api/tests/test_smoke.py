@@ -8,7 +8,9 @@ client = TestClient(app)
 def test_healthz():
     r = client.get("/healthz")
     assert r.status_code == 200
-    assert r.json() == {"status": "ok"}
+    body = r.json()
+    assert body["status"] == "ok"
+    assert "storage" in body
 
 
 def test_apartment_schema_loads():
