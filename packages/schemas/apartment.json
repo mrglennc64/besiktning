@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://besiktning.app/schemas/apartment.json",
+  "title": "Besiktningsprotokoll – Lägenhet",
+  "description": "Mall för besiktning av lägenhet (avflyttning/inflyttning). Skala: 1 = gott, 2 = godkänt, 3 = icke godkänt / skadat.",
+  "type": "object",
+  "$defs": {
+    "skick": {
+      "type": ["integer", "null"],
+      "enum": [1, 2, 3, null],
+      "description": "1 = gott, 2 = godkänt, 3 = icke godkänt / skadat. null = ej tillämpligt."
+    },
+    "golv": {
+      "type": "object",
+      "title": "Golv",
+      "properties": {
+        "klinker":    { "$ref": "#/$defs/skick", "title": "Klinker" },
+        "plastmatta": { "$ref": "#/$defs/skick", "title": "Plastmatta" },
+        "parkett":    { "$ref": "#/$defs/skick", "title": "Parkett" },
+        "linoleum":   { "$ref": "#/$defs/skick", "title": "Linoleum" },
+        "tra":        { "$ref": "#/$defs/skick", "title": "Trä" },
+        "natursten":  { "$ref": "#/$defs/skick", "title": "Natursten" }
+      }
+    },
+    "vaggar": {
+      "type": "object",
+      "title": "Väggar",
+      "properties": {
+        "kakel":     { "$ref": "#/$defs/skick", "title": "Kakel" },
+        "malade":    { "$ref": "#/$defs/skick", "title": "Målade" },
+        "tapet":     { "$ref": "#/$defs/skick", "title": "Tapet" },
+        "vaggmatta": { "$ref": "#/$defs/skick", "title": "Väggmatta" }
+      }
+    },
+    "tak": {
+      "type": "object",
+      "title": "Tak",
+      "properties": {
+        "malat": { "$ref": "#/$defs/skick", "title": "Målat" },
+        "puts":  { "$ref": "#/$defs/skick", "title": "Puts" }
+      }
+    },
+    "snickerier": {
+      "type": "object",
+      "title": "Snickerier",
+      "properties": {
+        "fonster_inkl_smyg":  { "$ref": "#/$defs/skick", "title": "Fönster inkl. smyg" },
+        "paneler":            { "$ref": "#/$defs/skick", "title": "Paneler" },
+        "dorrkarmar_foder":   { "$ref": "#/$defs/skick", "title": "Dörrkarmar/foder" },
+        "lister":             { "$ref": "#/$defs/skick", "title": "Lister" }
+      }
+    },
+    "ovriga_detaljer": {
+      "type": "object",
+      "title": "Övriga detaljer",
+      "properties": {
+        "dorrar":        { "$ref": "#/$defs/skick", "title": "Dörrar" },
+        "las":           { "$ref": "#/$defs/skick", "title": "Lås" },
+        "trosklar":      { "$ref": "#/$defs/skick", "title": "Trösklar" },
+        "kranar":        { "$ref": "#/$defs/skick", "title": "Kranar" },
+        "strombrytare":  { "$ref": "#/$defs/skick", "title": "Strömbrytare" },
+        "vagguttag":     { "$ref": "#/$defs/skick", "title": "Vägguttag" },
+        "lampkupor":     { "$ref": "#/$defs/skick", "title": "Lampkupor" },
+        "fonsterrutor":  { "$ref": "#/$defs/skick", "title": "Fönsterrutor" },
+        "radiatorer":    { "$ref": "#/$defs/skick", "title": "Radiatorer" },
+        "brandvarnare":  { "$ref": "#/$defs/skick", "title": "Brandvarnare" }
+      }
+    },
+    "room": {
+      "type": "object",
+      "properties": {
+        "golv":            { "$ref": "#/$defs/golv" },
+        "vaggar":          { "$ref": "#/$defs/vaggar" },
+        "tak":             { "$ref": "#/$defs/tak" },
+        "snickerier":      { "$ref": "#/$defs/snickerier" },
+        "ovriga_detaljer": { "$ref": "#/$defs/ovriga_detaljer" },
+        "anmarkningar":    { "type": "string", "title": "Anmärkningar för rummet" }
+      }
+    }
+  },
+  "properties": {
+    "header": {
+      "type": "object",
+      "title": "Allmänna uppgifter",
+      "properties": {
+        "lagenhetsadress":   { "type": "string", "title": "Lägenhetsadress" },
+        "besiktningsdatum":  { "type": "string", "format": "date", "title": "Besiktningsdatum" },
+        "besiktningstyp": {
+          "type": "string",
+          "title": "Besiktningstyp",
+          "enum": ["avflyttning", "inflyttning"],
+          "x-labels": {
+            "avflyttning": "Avflyttning",
+            "inflyttning": "Inflyttning"
+          }
+        },
+        "hyresgast_avflyttande":  { "type": "string", "title": "Hyresgäst (avflyttande)" },
+        "hyresgast_inflyttande":  { "type": "string", "title": "Hyresgäst (inflyttande)" },
+        "bostadsrattsforening":   { "type": "string", "title": "Bostadsrättsförening" },
+        "telefon":                { "type": "string", "title": "Telefon" },
+        "lagenhets_id":           { "type": "string", "title": "Lägenhets-id" },
+        "lagenhetstyp":           { "type": "string", "title": "Lägenhetstyp" },
+        "besiktningsman":         { "type": "string", "title": "Besiktningsman" },
+        "kontaktperson":          { "type": "string", "title": "Kontaktperson" },
+        "kontakt_telefon":        { "type": "string", "title": "Kontakt – Telefon" },
+        "inflyttningsdatum":      { "type": "string", "format": "date", "title": "Inflyttningsdatum" },
+        "utflyttningsdatum":      { "type": "string", "format": "date", "title": "Utflyttningsdatum" }
+      },
+      "required": ["lagenhetsadress", "besiktningsdatum", "besiktningstyp", "besiktningsman"]
+    },
+    "rooms": {
+      "type": "object",
+      "title": "Rum",
+      "description": "Skick per detalj. Lämna tomt för ej tillämpligt.",
+      "properties": {
+        "hall":          { "$ref": "#/$defs/room", "title": "Hall" },
+        "kok":           { "$ref": "#/$defs/room", "title": "Kök" },
+        "badrum_1":      { "$ref": "#/$defs/room", "title": "Badrum 1" },
+        "badrum_2":      { "$ref": "#/$defs/room", "title": "Badrum 2" },
+        "wc_1":          { "$ref": "#/$defs/room", "title": "WC 1" },
+        "wc_2":          { "$ref": "#/$defs/room", "title": "WC 2" },
+        "kladkammare_1": { "$ref": "#/$defs/room", "title": "Klädkammare 1" },
+        "kladkammare_2": { "$ref": "#/$defs/room", "title": "Klädkammare 2" },
+        "vardagsrum":    { "$ref": "#/$defs/room", "title": "Vardagsrum" },
+        "sovrum_1":      { "$ref": "#/$defs/room", "title": "Sovrum 1" },
+        "sovrum_2":      { "$ref": "#/$defs/room", "title": "Sovrum 2" },
+        "forrad":        { "$ref": "#/$defs/room", "title": "Förråd" }
+      }
+    },
+    "utrustning": {
+      "type": "object",
+      "title": "Övrig utrustning",
+      "description": "Skick per produkt.",
+      "properties": {
+        "tvattstall":     { "$ref": "#/$defs/skick", "title": "Tvättställ" },
+        "handdukstork":   { "$ref": "#/$defs/skick", "title": "Handdukstork" },
+        "wc_stol":        { "$ref": "#/$defs/skick", "title": "WC-stol" },
+        "badkar":         { "$ref": "#/$defs/skick", "title": "Badkar" },
+        "bide":           { "$ref": "#/$defs/skick", "title": "Bidé" },
+        "badrumsskap":    { "$ref": "#/$defs/skick", "title": "Badrumsskåp" },
+        "dusch":          { "$ref": "#/$defs/skick", "title": "Dusch" },
+        "torkskap":       { "$ref": "#/$defs/skick", "title": "Torkskåp" },
+        "torkstallning":  { "$ref": "#/$defs/skick", "title": "Torkställning" },
+        "spis":           { "$ref": "#/$defs/skick", "title": "Spis" },
+        "kokslakt_kapa":  { "$ref": "#/$defs/skick", "title": "Köksfläkt/kåpa" },
+        "kylskap":        { "$ref": "#/$defs/skick", "title": "Kylskåp" },
+        "frys":           { "$ref": "#/$defs/skick", "title": "Frys" },
+        "kyl_frys_komb":  { "$ref": "#/$defs/skick", "title": "Kyl/frys kombi" },
+        "sval":           { "$ref": "#/$defs/skick", "title": "Sval" },
+        "diskbank":       { "$ref": "#/$defs/skick", "title": "Diskbänk" },
+        "diskmaskin":     { "$ref": "#/$defs/skick", "title": "Diskmaskin" },
+        "bankutrustning": { "$ref": "#/$defs/skick", "title": "Bänkutrustning" },
+        "skaputrustning": { "$ref": "#/$defs/skick", "title": "Skåputrustning" },
+        "hatthylla":      { "$ref": "#/$defs/skick", "title": "Hatthylla" },
+        "oppen_spis":     { "$ref": "#/$defs/skick", "title": "Öppen spis" },
+        "bredband":       { "$ref": "#/$defs/skick", "title": "Bredband" },
+        "golvvarme":      { "$ref": "#/$defs/skick", "title": "Golvvärme" },
+        "ringklocka":     { "$ref": "#/$defs/skick", "title": "Ringklocka" }
+      }
+    },
+    "avslutning": {
+      "type": "object",
+      "title": "Avslutning",
+      "properties": {
+        "kommentarer":            { "type": "string", "title": "Kommentarer & anmärkningar", "maxLength": 10000 },
+        "ersatts_av_hyresgast":   { "type": "number", "title": "Ersätts av hyresgäst (kr)", "minimum": 0 },
+        "nycklar_antal":          { "type": "integer", "title": "Antal nycklar återlämnade", "minimum": 0 },
+        "nycklar_aterlamnade":    { "type": "boolean", "title": "Nycklar återlämnade" },
+        "utrymda_och_stadade":    { "type": "boolean", "title": "Lägenheten och förråd utrymda och tillfredsställande städade" }
+      }
+    },
+    "signaturer": {
+      "type": "object",
+      "title": "Signaturer",
+      "properties": {
+        "inflyttande_hyresgast": {
+          "type": "object",
+          "title": "Inflyttande hyresgäst",
+          "properties": {
+            "namn":  { "type": "string", "title": "Namn" },
+            "datum": { "type": "string", "format": "date", "title": "Datum" }
+          }
+        },
+        "avflyttande_hyresgast": {
+          "type": "object",
+          "title": "Avflyttande hyresgäst",
+          "properties": {
+            "namn":  { "type": "string", "title": "Namn" },
+            "datum": { "type": "string", "format": "date", "title": "Datum" }
+          }
+        },
+        "besiktningsman": {
+          "type": "object",
+          "title": "Besiktningsman",
+          "properties": {
+            "namn":  { "type": "string", "title": "Namn" },
+            "datum": { "type": "string", "format": "date", "title": "Datum" }
+          }
+        }
+      }
+    }
+  },
+  "required": ["header"]
+}

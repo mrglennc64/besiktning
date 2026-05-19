@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://besiktning.app/schemas/common.json",
+  "title": "Gemensamma fält för besiktningsprotokoll",
+  "description": "Återanvändbara definitioner som delas av apartment.json, smahus.json och house.json.",
+  "type": "object",
+  "$defs": {
+    "signature_block": {
+      "type": "object",
+      "title": "Signatur",
+      "properties": {
+        "namn": { "type": "string", "title": "Namn" },
+        "datum": { "type": "string", "format": "date", "title": "Datum" },
+        "ort": { "type": "string", "title": "Ort" }
+      }
+    },
+    "inspector_meta": {
+      "type": "object",
+      "title": "Besiktningsman",
+      "properties": {
+        "besiktningsman": { "type": "string", "title": "Besiktningsman" },
+        "kontaktperson": { "type": "string", "title": "Kontaktperson" },
+        "telefon": { "type": "string", "title": "Telefon" },
+        "epost": { "type": "string", "format": "email", "title": "E-post" }
+      }
+    },
+    "free_text_comment": {
+      "type": "string",
+      "title": "Kommentarer & anmärkningar",
+      "maxLength": 10000
+    },
+    "yes_no": {
+      "type": "boolean",
+      "title": "Ja/Nej"
+    },
+    "grading_six_symbol": {
+      "type": "string",
+      "enum": [
+        "inget_att_notera",
+        "mindre_brister",
+        "risk_for_skador",
+        "fordjupad_undersokning",
+        "forslag_pa_atgarder",
+        "obesiktigad"
+      ],
+      "x-labels": {
+        "inget_att_notera": "Inget att notera",
+        "mindre_brister": "Mindre brister",
+        "risk_for_skador": "Risk för skador",
+        "fordjupad_undersokning": "Fördjupad undersökning rekommenderas",
+        "forslag_pa_atgarder": "Förslag på åtgärder",
+        "obesiktigad": "Obesiktigad byggnadsdel"
+      }
+    },
+    "moisture_reading": {
+      "type": "object",
+      "title": "Fuktmätning",
+      "properties": {
+        "plats": { "type": "string", "title": "Plats" },
+        "fk_percent": {
+          "type": "number",
+          "title": "Fuktkvot (FK %)",
+          "minimum": 0,
+          "maximum": 100,
+          "x-warn-above": 17
+        },
+        "rf_percent": {
+          "type": "number",
+          "title": "Relativ fuktighet (RF %)",
+          "minimum": 0,
+          "maximum": 100,
+          "x-warn-above": 75
+        },
+        "temperatur": { "type": "number", "title": "Temperatur (°C)" }
+      }
+    }
+  }
+}
