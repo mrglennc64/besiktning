@@ -16,6 +16,10 @@ from .models import (
     ProtokollSummary,
     Template,
 )
+from .admin import router as admin_router
+from .auth import router as auth_router
+from .members import router as members_router
+from .news import router as news_router
 from .storage import store
 
 
@@ -43,6 +47,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(news_router)
+app.include_router(members_router)
+app.include_router(auth_router)
+app.include_router(admin_router)
 
 DEMO_USER = "demo"
 

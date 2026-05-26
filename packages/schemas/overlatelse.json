@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://besiktning.app/schemas/overlatelse.json",
+  "title": "Överlåtelsebesiktning – SBR-modellen",
+  "description": "Document schema for an SBR-style överlåtelsebesiktning utlåtande. Each finding under okular_besiktning and riskanalys may reference a noteringar.json entry by id; the catalog supplies the canonical Swedish text, and per-finding overrides hold the site-specific qualifier (location, photo, free-text addendum).",
+  "type": "object",
+  "$defs": {
+    "section_4": {
+      "type": "object",
+      "title": "Byggnadsdel-sektion (kapitel 4)",
+      "properties": {
+        "besiktningsmannens_text": {
+          "type": "string",
+          "title": "Besiktningsmannens text",
+          "description": "Free-text describing what was observed for this part. May reference catalog findings via {{notering_id}} placeholders in v0; later may be auto-assembled from findings."
+        },
+        "findings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/finding" }
+        },
+        "ej_besiktigat": {
+          "type": "boolean",
+          "title": "Ej besiktigat (otillgängligt)",
+          "description": "True if the part was inaccessible (e.g. krypgrundens lucka ej öppningsbar)."
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "title": "Anmärkning",
+      "description": "A single observation tied to a noteringar.json entry. The catalog body becomes the printed text; qualifier/photo localize it to this property.",
+      "properties": {
+        "notering_id": {
+          "type": "string",
+          "title": "Referens till noteringar-katalog",
+          "description": "Id from noteringar.json — supplies the canonical observation + risk text."
+        },
+        "qualifier": {
+          "type": "string",
+          "title": "Platsspecifik kommentar",
+          "description": "Free-text addendum: where in the building, severity, exception. Appended to the catalog text."
+        },
+        "photo_refs": {
+          "type": "array",
+          "title": "Foton",
+          "items": { "type": "string", "description": "Photo id or URL" }
+        },
+        "ai_match_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Vision-model confidence in the catalog match. Null if user-picked manually."
+        },
+        "validated_by_user": {
+          "type": "boolean",
+          "description": "True once the user has accepted the AI's match (or picked one manually)."
+        }
+      },
+      "required": ["notering_id"]
+    }
+  },
+  "properties": {
+    "parter_och_uppdrag": {
+      "type": "object",
+      "title": "1. Parter och uppdrag",
+      "properties": {
+        "fastighet_namn":        { "type": "string", "title": "Fastighetsnamn" },
+        "adress":                { "type": "string", "title": "Adress" },
+        "uppdragsgivare":        { "type": "string", "title": "Uppdragsgivare" },
+        "distribution":          { "type": "string", "title": "Distribution (mottagare)" },
+        "narvarande":            { "type": "string", "title": "Närvarande" },
+        "besiktningsforetag":    { "type": "string", "title": "Besiktningsföretag" },
+        "besiktningsman":        { "type": "string", "title": "Besiktningsman" },
+        "besiktningsdag":        { "type": "string", "format": "date", "title": "Besiktningsdag" },
+        "vaderlek":              { "type": "string", "title": "Väderlek" },
+        "uppdrag_beskrivning":   { "type": "string", "title": "1.1 Uppdrag" },
+        "forutsattningar":       { "type": "string", "title": "1.2 Förutsättningar" }
+      },
+      "required": ["fastighet_namn", "adress", "uppdragsgivare", "besiktningsman", "besiktningsdag"]
+    },
+    "handlingar_och_upplysningar": {
+      "type": "object",
+      "title": "2. Handlingar och upplysningar",
+      "properties": {
+        "tillhandahallna_handlingar": {
+          "type": "array",
+          "title": "2.1 Tillhandahållna handlingar",
+          "items": { "type": "string" }
+        },
+        "muntliga_uppgifter": {
+          "type": "object",
+          "title": "2.2 Muntliga uppgifter (från säljare/uppdragsgivare)",
+          "properties": {
+            "allmant":            { "type": "array", "items": { "type": "string" }, "title": "Allmänt" },
+            "vatten_och_avlopp":  { "type": "array", "items": { "type": "string" }, "title": "Vatten och avlopp" },
+            "el_och_installationer": { "type": "array", "items": { "type": "string" }, "title": "El och installationer" }
+          }
+        }
+      }
+    },
+    "fastighetsuppgifter": {
+      "type": "object",
+      "title": "3. Fastighetsuppgifter",
+      "properties": {
+        "byggnadsar":     { "type": "string", "title": "Byggnadsår" },
+        "vaningar":       { "type": "string", "title": "Våningar" },
+        "stomme":         { "type": "string", "title": "Stomme" },
+        "bjalklag":       { "type": "string", "title": "Bjälklag" },
+        "grund":          { "type": "string", "title": "Grund" },
+        "fasad":          { "type": "string", "title": "Fasad" },
+        "yttertak":       { "type": "string", "title": "Yttertak" },
+        "varme":          { "type": "string", "title": "Värme" },
+        "ventilation":    { "type": "string", "title": "Ventilation" },
+        "va":             { "type": "string", "title": "VA (vatten/avlopp)" }
+      }
+    },
+    "okular_besiktning": {
+      "type": "object",
+      "title": "4. Okulär besiktning",
+      "description": "Per byggnadsdel: noterade observationer (finnings against the noteringar catalog) + besiktningsmannens fria text.",
+      "properties": {
+        "mark_och_dranering":   { "$ref": "#/$defs/section_4" },
+        "grundlaggning":        { "$ref": "#/$defs/section_4" },
+        "stomme":               { "$ref": "#/$defs/section_4" },
+        "fasad_fonster_dorrar": { "$ref": "#/$defs/section_4" },
+        "yttertak":             { "$ref": "#/$defs/section_4" },
+        "vind":                 { "$ref": "#/$defs/section_4" },
+        "invandiga_ytor": {
+          "type": "object",
+          "title": "4.7 Invändiga ytor",
+          "description": "Per rum. Rooms are open-ended; common keys: kok, vardagsrum, badrum, glasveranda, ovre_plan, hall, sovrum_X.",
+          "additionalProperties": { "$ref": "#/$defs/section_4" }
+        },
+        "installationer":       { "$ref": "#/$defs/section_4" },
+        "vatrum":               { "$ref": "#/$defs/section_4" }
+      }
+    },
+    "riskanalys": {
+      "type": "array",
+      "title": "5. Riskanalys",
+      "description": "List of identified risks. Each one references a noteringar entry whose body becomes the printed risk text.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rubrik":      { "type": "string", "title": "Risk-rubrik (t.ex. 'Risk – Krypgrund')" },
+          "findings":    { "type": "array", "items": { "$ref": "#/$defs/finding" } }
+        },
+        "required": ["rubrik"]
+      }
+    },
+    "fortsatt_teknisk_utredning": {
+      "type": "object",
+      "title": "6. Fortsatt teknisk utredning (FTU)",
+      "properties": {
+        "motiverat": { "type": "boolean", "title": "FTU motiverat?" },
+        "beskrivning": { "type": "string", "title": "Beskrivning av rekommenderad utredning" }
+      }
+    },
+    "sammanfattning": {
+      "type": "object",
+      "title": "7. Sammanfattning av fastighetens skick",
+      "properties": {
+        "text": { "type": "string", "title": "Sammanfattande text" },
+        "sarskilt_att_beakta": {
+          "type": "array",
+          "items": { "type": "string" },
+          "title": "Särskilt bör beaktas"
+        },
+        "skick_bedomning": {
+          "type": "string",
+          "title": "Skickbedömning",
+          "enum": ["under_normalt", "normalt", "over_normalt"],
+          "x-labels": {
+            "under_normalt": "Under normalt skick för ålder/konstruktion",
+            "normalt": "Normalt skick med hänsyn till ålder/konstruktion",
+            "over_normalt": "Över normalt skick"
+          }
+        }
+      }
+    },
+    "bilagor": {
+      "type": "array",
+      "title": "8. Bilagor",
+      "items": { "type": "string" },
+      "default": ["Teknisk livslängd", "SBR:s villkor", "GDPR"]
+    },
+    "ansvar": {
+      "type": "object",
+      "title": "Ansvar och ansvarstid",
+      "properties": {
+        "ansvarstid_ar": { "type": "integer", "default": 2, "title": "Ansvarstid (år)" },
+        "signatur_ort":  { "type": "string", "title": "Ort" },
+        "signatur_datum": { "type": "string", "format": "date", "title": "Datum" }
+      }
+    }
+  },
+  "required": ["parter_och_uppdrag", "fastighetsuppgifter", "okular_besiktning"]
+}

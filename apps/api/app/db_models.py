@@ -52,6 +52,72 @@ class ProtokollRow(Base):
     __table_args__ = (UniqueConstraint("user_id", "number", name="uq_user_number"),)
 
 
+class NewsItemRow(Base):
+    __tablename__ = "news_items"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    source_type: Mapped[str] = mapped_column(String(16))     # 'rss' | 'member' | 'podcast'
+    source_name: Mapped[str] = mapped_column(String(255))    # e.g. 'Byggvärlden' or member name
+    title: Mapped[str] = mapped_column(String(512))
+    url: Mapped[str] = mapped_column(String(1024), unique=True)
+    summary: Mapped[str | None] = mapped_column(Text, nullable=True)
+    published_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    status: Mapped[str] = mapped_column(String(16), default="pending", index=True)  # 'pending' | 'published' | 'rejected'
+    submitter_name: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    submitter_email: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    moderator_note: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=_now, onupdate=_now
+    )
+
+
+class AuthTokenRow(Base):
+    """One-time magic-link token. Expires after 1h or on first use."""
+    __tablename__ = "auth_tokens"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    email: Mapped[str] = mapped_column(String(255), index=True)
+    token: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    used_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class SessionRow(Base):
+    """Long-lived session token, 30-day TTL."""
+    __tablename__ = "sessions"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    email: Mapped[str] = mapped_column(String(255), index=True)
+    token: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class MemberApplicationRow(Base):
+    __tablename__ = "member_applications"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    name: Mapped[str] = mapped_column(String(255))
+    email: Mapped[str] = mapped_column(String(255), index=True)
+    foretag: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    region: Mapped[str | None] = mapped_column(String(128), nullable=True)
+    specialitet: Mapped[str | None] = mapped_column(String(512), nullable=True)
+    webbplats: Mapped[str | None] = mapped_column(String(512), nullable=True)
+    motivering: Mapped[str | None] = mapped_column(Text, nullable=True)
+    status: Mapped[str] = mapped_column(String(16), default="pending", index=True)  # 'pending' | 'accepted' | 'rejected'
+    moderator_note: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=_now, onupdate=_now
+    )
+
+
 class AttachmentRow(Base):
     __tablename__ = "attachments"
 

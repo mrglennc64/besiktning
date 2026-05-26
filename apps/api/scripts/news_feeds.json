@@ -1,0 +1,23 @@
+{
+  "comment": "RSS feeds the weekly scrape pulls from. Edit by hand. Verified working 2026-05-26.",
+  "trade_pubs": [
+    { "name": "Byggvärlden", "url": "https://www.byggvarlden.se/feed/" },
+    { "name": "Byggindustrin", "url": "https://www.byggindustrin.se/rss.xml" },
+    { "name": "Fastighetstidningen", "url": "https://fastighetstidningen.se/feed/" },
+    { "name": "Husbyggaren (SBR)", "url": "https://husbyggaren.se/feed/" }
+  ],
+  "authorities": [],
+  "_authorities_todo": "Find working RSS feeds for Boverket, Konsumentverket, MSB, SGI, ARN — their public pages don't expose feeds in common locations. Workarounds: scrape HTML directly (fragile) or use a search API. Skipping for v0.",
+  "keywords_filter": [
+    "besiktning",
+    "överlåtelsebesiktning",
+    "förbesiktning",
+    "fastighet",
+    "bostadsköp",
+    "dolda fel",
+    "fukt",
+    "mögel",
+    "radon",
+    "våtrum"
+  ]
+}

@@ -1,0 +1,2126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://besiktning.app/schemas/noteringar.json",
+  "title": "Katalog över noteringar och riskanalyser",
+  "description": "Auto-extracted v0 from SynaHus master docx. Each entry is a canonical observation (title) + standard risk/explanation text (body) scoped to a building category. Used by the photo-loop to match what the AI sees in a photo to a pre-vetted Swedish-language paragraph that goes into the utlåtande verbatim.",
+  "source": "SynaHus i Sverige AB noteringar, riskanalyser mm.docx",
+  "extracted_at": "2026-05-26",
+  "version": "0.1.0-raw",
+  "entry_count": 300,
+  "entries": [
+    {
+      "id": "allmant__snoteringar_och_riskanalyser_for_synahus__001",
+      "category": "Allmänt",
+      "title": "sNoteringar och riskanalyser för SynaHus i Sverige AB",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "mark__stupror_ar_inte_anslutet_till_marklednin__001",
+      "category": "MARK",
+      "title": "Stuprör är inte anslutet till markledning",
+      "body": "Stuprör som inte är anslutet till markledning eller som avleds på ett betryggande sätt från huset kan medföra en ökad fuktbelastning på grundmur/sockel med fuktrelaterade skador som möjlig följd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mark__ovrigt__002",
+      "category": "MARK",
+      "title": "Övrigt",
+      "body": "Inga avvikande lutningar/planavvikelser noterades i byggnaden och heller inga andra signaler som tyder på att allvarliga rörelser/sättningar skett i huset orsakat av rörelser i mark.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mark__untitled__003",
+      "category": "MARK",
+      "title": "",
+      "body": "Marklutning förekommer mot grunden. Undertecknad anser det lämpligt att man planerar marken så att ytvatten avleds från grunden.",
+      "confidence": "low"
+    },
+    {
+      "id": "mark__untitled__004",
+      "category": "MARK",
+      "title": "",
+      "body": "Snötäckt mark innebär svårigheter att bedöma till exempel marklutningar, sprickor i sockeln samt växtlighet runt huset. Besiktning av dessa delar ingår i en köpares undersökningsplikt och bör utföras när marken är snöfri.",
+      "confidence": "low"
+    },
+    {
+      "id": "mark__untitled__005",
+      "category": "MARK",
+      "title": "",
+      "body": "För att minska ytvattentillförsel mot en byggnad bör man se till att marken närmast grund lutar från byggnaden. Mark närmast grund bör dessutom bestå av vattengenomsläppligt material. Man bör även undvika större träd eller buskar invid huset pga att rötter kan växa in i och orsaka stopp i avlopps-, dränerings- och dagvattenledningar samt orsaka sättningar pga. utdränage av mark.",
+      "confidence": "low"
+    },
+    {
+      "id": "mark__untitled__006",
+      "category": "MARK",
+      "title": "",
+      "body": "Det finns indikationer på sättningar i byggnaden vilka kan vara orsakade av markförhållandena. För att kunna kontrollera huruvida rörelser i byggnaden är pågående eller inte, erfordras inborrning av dubbar i byggnadens sockel samt att precisionsavvägning av dubbarna utförs mot fast höjdfix. En sådan mätning bör ske regelbundet under minst ett år för att man ska kunna bedöma eventuella rörelser eller sättningar. Ett alternativ till precisionsavvägningen kan vara att det utförs en geoteknisk undersökning varvid markförhållanden och risk för sättning utreds.",
+      "confidence": "low"
+    },
+    {
+      "id": "mark__kallare_spygatt_golvbrunn__007",
+      "category": "MARK",
+      "title": "Källare spygatt/golvbrunn",
+      "body": "Avsaknad av spygatt/golvbrunn i källartrappa/garagenedfart utgör risk för översvämning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mark__tradgardsrabatter_mot_grund__008",
+      "category": "MARK",
+      "title": "Trädgårdsrabatter mot grund",
+      "body": "Planteringar och växtlighet ovan mark intill husliv kan öka fuktbelastningen på grundsocklar och husfasader genom fördröjning av upptorkning efter nederbörd, detta kan med tiden orsaka fuktrelaterade skador i dessa konstruktionen. Dessutom kan rötter växa in i avlopps- dränerings och/eller dagvattenledningar och förorsaka stopp eller dämning i dessa ledningar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mark__palade_byggnader_trapalar__009",
+      "category": "MARK",
+      "title": "Pålade byggnader (träpålar)",
+      "body": "Om byggnaden är pålad med träpålar samt om grundvattenytan sänkts (generellt i området eller genom dräneringsåtgärder), kan det medföra risk för att pålskallarna ruttnar. I sådant fall kan rörelser/sättningar uppstå. Pålade grunder står oftast stilla jämfört med övrig mark som sjunker vilket ibland orsakar brott på serviceledningar (avlopps- och vattenledningar) mellan byggnad och kommunalt ledningsnät.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mark__sattningsfras_iakttagelse_eller_risk_bed__010",
+      "category": "MARK",
+      "title": "Sättningsfras (iakttagelse) eller risk? bedöm själv",
+      "body": "Det förekommer mindre sprickor i grundmuren/källarväggen/fasaden/tegelfasaden. Vill man kontrollera huruvida sprickorna från eventuella rörelser i byggnaden är pågående eller inte, erfordras inborrning av dubbar i byggnadens sockel alternativt i anslutning till sprickor samt att precisionsavvägning av dubbarna utförs mot fast höjdfix. En sådan mätning bör ske regelbundet under minst ett år för att man ska kunna bedöma eventuella rörelser eller sättningar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mark__markberg_mot_grunden__011",
+      "category": "MARK",
+      "title": "Markberg mot grunden",
+      "body": "Bergets lutning mot krypgrunden bedöms bidra med stor fuktbelastning för grundläggningen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__krypgrund__001",
+      "category": "GRUNDLÄGGNING",
+      "title": "Krypgrund",
+      "body": "Risk för tillväxt föreligger om den relativa fuktigheten (RF) i den omgivande luften är över 75% vilket motsvarar en fuktkvot (FK) på 17%.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__krypgrunden_har_inte_besiktigats_da_luck__002",
+      "category": "GRUNDLÄGGNING",
+      "title": "Krypgrunden har inte besiktigats då lucka till utrymmet saknas",
+      "body": "Uteluftsventilerade krypgrunder med bjälklag av organiskt material har ofta fuktskador. Befintlig krypgrund har inte kunnat besiktigas eftersom ingen lucka finns till grunden. För att kunna konstatera om befintlig krypgrund har fuktskador erfordras att en lucka tas upp så att grunden blir besiktningsbar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__krypgrund_med_trabjalklag__003",
+      "category": "GRUNDLÄGGNING",
+      "title": "Krypgrund med träbjälklag",
+      "body": "Krypgrunder som ventileras med hjälp av uteluft har visat sig vara en riskkonstruktion ur fuktsynpunkt och med avseende på mikrobiella skador så som mögel och röta. (särskilt sommartid pga. kondens eller pga. vatteninträngning och markfukt). Detta kan medföra risk för fukt-/mikrobiella skador och konstruktionsförsvagningar i golvbjälklag, syllar mm. Hög fuktbelastning i grund kan även medföra att grundens mark drabbas av mikrobiell påväxt vilket kan avge en \"dålig lukt\" som kan tränga upp i bostaden och även luktsmitta bjälklaget. För bättre bedömning av bjälklaget erfordras konstruktionsingrepp.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__untitled__004",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Uteluftsventilerad krypgrund:",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__005",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Golvbjälklaget ovan den uteluftsventilerade krypgrunden riskerar på grund av naturlig fuktpåverkan att drabbas eller vara drabbade av fuktskador.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__006",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "I en uteluftsventilerad krypgrund där inga fukttillskott förekommer i form av markfukt, ytvatten eller andra fukttillskott bestäms den relativa luftfuktigheten enbart av uteluftens fuktinnehåll och temperatur i kryputrymmet.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__007",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "På vintern då det ute är kallare än i krypgrunden kommer den relativa luftfuktigheten att bli lägre än inomhusluften, ca 60-70%. Under sommaren då inomhusluften innehåller relativt mycket fukt är temperaturen i krypgrunden lägre. Därför kommer också den relativa luftfuktigheten i krypgrunden att bli högre, ca 75-90 %, således finns det en teoretisk möjlighet för mögelpåväxt teoretiskt under sommarperioden.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__008",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Det har aldrig förmärkts någon avvikande lukt typ \"mögellukt\" i huset och nuvarande ägare har inte heller fått påpekanden från utomstående om att det skulle finnas en avvikande lukt.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__009",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Trots att det inte förekommer några signaler om mikrobiell aktivitet i krypgrunden skall man vara medveten om att denna typ av grund utgör s.k. riskkonstruktion för mögel och röta.  (se vidare under not riskanalys nedan). Regelbunden kontroll/inspektion av krypgrunden krävs eftersom förhållandet i grunden varierar med årstiderna.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__krypgrund_med_betong_lattbetong_erge_ew__010",
+      "category": "GRUNDLÄGGNING",
+      "title": "Krypgrund med Betong/lättbetong/Erge/EW",
+      "body": "Krypgrunder som ventileras med hjälp av uteluft har visat sig vara en riskkonstruktion ur fuktsynpunkt och med avseende på mikrobiella skador. (särskilt sommartid pga. kondens eller pga. vatteninträngning och markfukt). Detta beroende på att kondensbildning periodvis kan inträffa i grund balkar och undersida av betongbjälklag. Detta kan medföra risk för fukt-/mikrobiella skador så som mögel och röta och konstruktionsförsvagningar i golvbjälklag, syllar och ovanliggande golvkonstruktion mm. Hög fuktbelastning i grund kan även medföra att grundens mark drabbas av mikrobiell påväxt som kan avge en \"dålig lukt\" vilken kan tränga upp i bostaden och även luktsmitta bjälklaget. För bättre bedömning av golvkonstruktionen erfordras konstruktionsingrepp fuktmätningar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__untitled__011",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Med anledning av de iakttagelser som gjorts i krypgrunden bedöms risken för mikrobiell aktivitet/skador så som mögel och röta (och eventuell luktsmitta) vara påtaglig.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__012",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Med anledning av att fuktmässiga förhållandet i krypgrunden varierar, erfordras att krypgrunden med jämna mellanrum kontrolleras med avseende eventuellt fritt stående vatten, missfärgningar, läckage mm.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__013",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Förbättringsåtgärder för att få ner fuktigheten i krypgrunden erfordras. Med anledning av att krypgrunden är gemensam för hela längan kan bättringsåtgärder för hela längan vara nödvändiga.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__014",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Regelbunden kontroll/inspektion av krypgrunden krävs eftersom förhållandet i grunden varierar med årstiderna.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__015",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "En fukttekniskt bättre lösning erhålls om grunden konverteras till varmgrund eller kompletteras med ett avfuktningsaggregat.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__plast_pa_mark_saknas__016",
+      "category": "GRUNDLÄGGNING",
+      "title": "Plast på mark saknas",
+      "body": "Det saknas plastfolie på mark som hindrar/minskar naturligt fukttillskott till krypgrundsluften från mark. Grundprincipen för att begränsa risken för mikrobiella skador är bl.a. att det skall finnas ett kapillärbrytande material typ singel, lecakulor över marken och heltäckande plastfolie.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__viktig_fras__017",
+      "category": "GRUNDLÄGGNING",
+      "title": "Viktig fras",
+      "body": "Vid besiktning under byggnaden har endast stickprovskontroller utförts för att erhålla indikation om skicket vad gäller kontroll av bl.a. rötskador i syllar etc.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__avfuktare_monterad_i_efterhand__018",
+      "category": "GRUNDLÄGGNING",
+      "title": "Avfuktare monterad i efterhand",
+      "body": "Avfuktare är installerad i efterhand. Risk finns att mikrobiella skador kan ha funnits i grunden innan avfuktningsaggregatet installerades. Kontroll av avfuktningsaggregat ingår inte i uppdraget.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__mekaniskt_franluftventilerad_krypgrund__019",
+      "category": "GRUNDLÄGGNING",
+      "title": "Mekaniskt frånluftventilerad krypgrund",
+      "body": "Mekaniskt frånluftventilerad kryprund kan innebära en ökad avkylning av grunden under vintern och en ökad tillförsel av varm luft under sommaren och där med ökad risk för kondens och fuktskador.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__untitled__020",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Vid stickprovsmässiga luktkontroller utmed golvvinklar noterades en avvikande lukt som tyder på mikrobiell aktivitet (i dagligt tal mögel) Det är vanligt att s.k. mögellukt kan förnimmas i bostaden vid mikrobiella skador i grunden. Det saknas plastfolie på mark som hindrar/minskar naturligt fukttillskott till krypgrundsluften från mark. Grundprincipen för att begränsa risken för mikrobiella skador är bl.a. att det skall finnas ett kapillärbrytande material typ singel, lecakulor över marken och heltäckande plastfolie.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__021",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Lokalt missfärgade golvbjälkar, påväxt på mark, jordlukt, mögellukt noterades.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__022",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Blöt mark noterades i grund. Med anledning av de iakttagelser som gjorts i krypgrunden bedöms risken för mikrobiell aktivitet/skador (och eventuell luktsmitta) vara påtaglig.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__023",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Se vidare under fortsatt teknisk utredning.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__024",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Vid inträdet i byggnaden förmärks en svag \"sommarstugelukt” i inomhusluften som undertecknad förknippar med mikrobiell aktivitet (i dagligt tal mögellukt).",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__025",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Med anledning av de iakttagelser som gjorts i krypgrunden bedöms risken för mikrobiell aktivitet/skador (och eventuell luktsmitta) vara påtaglig.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__026",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Lämpligt vidare kontroller för att utreda om dräneringen och/eller andra vattenavvisande åtgärder bör förnyas. En inte fungerande dränering ökar risken för fuktrelaterade skador och misslukter.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__mogellukt_vid_intrade__027",
+      "category": "GRUNDLÄGGNING",
+      "title": "Mögellukt vid inträde",
+      "body": "Vid inträdet i byggnaden förmärktes en avvikande lukt i inomhusluften som undertecknad förknippar med mikrobiell förekomst (i dagligt tal ”mögellukt”), lukt från golvvinklar kunde förnimmas i xx samt i anslutning till xx. Det går inte döma ut konstruktionen enbart på denna indikation, för att kunna fastställa orsak, omfattning och behov av eventuella åtgärder erfordras att man utför vidare kontroller/fortsatt teknisk utredning. Förstörande ingrepp i konstruktionsdelar ingår inte i uppdraget men kan beställas som tilläggstjänst. En sådan undersökning kräver dessutom säljarens medgivande. Om inte ingrepp enligt ovan medges kan konstruktionen kontrolleras med mögelhund för att eventuellt kunna identifiera mikrobiell skada/aktivitet.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning__untitled__028",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Fuktig mark och lokalt blöt mark konstaterades i grund. Orsak, omfattning och nödvändiga åtgärder för att minska/hindra vatteninträngning i grund bör utredas. Förhållandet innebär att bjälklag kan ha påverkats av fukt med risk för mikrobiella skador så som mögel, röta och lukt.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__029",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "En vanlig skadeorsak i torpargrunder är att den lukt som finns i grunden kan ge upphov till s.k. \"luktsmitta\" i konstruktionsdelar (t.ex. bjälklags- och väggisolering) och att lukten även kan tränga upp i bostaden genom otätheter. Därför erfordras att man gör vidare kontroller via uttagande av materialprover för luktanalys (s.k. luktkontroll). Även om det inte vid dagens besiktning kunde förnimmas någon mögellukt i bostaden, föreligger det risk att den kan uppkomma. Lukten kan variera med årstiderna.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__untitled__030",
+      "category": "GRUNDLÄGGNING",
+      "title": "",
+      "body": "Spår av att det periodvis kan förekomma kondens på bjälklagets undersida noterades. Om ovanliggande golvkonstruktion inte fuktskyddats finns risk för att vatten sugs in bjälklaget och skadar golv, syllar mm. Dessutom finns risk för att lättbetongkassetternas armering rostar vilket på sikt kan innebära nedsatt bärförmåga.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning__plintgrund__031",
+      "category": "GRUNDLÄGGNING",
+      "title": "Plintgrund",
+      "body": "Denna typ av grund medför normalt att bjälklaget mot mark ventileras väl. Konstruktionen medför i normalfallet begränsad risk för fukt/mikrobiella skador i bjälklaget under förutsättning att det finns tillräckligt avstånd mellan mark och golvbjälklag och att marken har sådan lutning att det inte uppstår vattensamlingar under byggnaden vilket kan ge upphov till dålig lukt som kan sprida sig till bjälklaget och vidare till bostaden.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_uppreglad_golvk__001",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med uppreglad golvkonstruktion",
+      "body": "Betongplatta på mark med uppreglat och isolerat golv. Befintlig golvkonstruktion riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador. Detta i sin tur kan leda till mikrobiella skador (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. För att kunna konstatera om reglade golv-/väggsyllar har fuktskador så som mögel och röta erfordras att man utför konstruktionsingrepp, fuktmätningar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__untitled__002",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "",
+      "body": "Passivt ventilerat Nivellgolv/Grangolv.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__untitled__003",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "",
+      "body": "Passivt ventilerade konstruktioner riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador. Detta i sin tur kan leda till mikrobiella skador så som mögel och röta (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. För att kunna konstatera om golvkonstruktionen har fuktskador erfordras att man utför konstruktionsingrepp, fuktmätningar mm. En fukttekniskt bättre lösning erhålls om golvet kompletteras med ett ventilations-aggregat, vilket även tillverkaren förespråkar.",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_uppreglade_golv__004",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med uppreglade golv",
+      "body": "Betongplatta på mark med ett uppreglat trägolv i kontakt med betongplattan, är en av de vanligast förekommande konstruktionerna under 1970-talet. Mikrobiell aktivitet kan uppkomma i syllar, träreglar, och mineralull men även i träspån, smuts etc. p.g.a. bristfällig rengöring av betongplattan. I vissa fall kan även rötskador förekomma i syllar, spikreglar etc. särskilt om dessa är ingjutna i betongplattan.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_uppreglad_golvk__005",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med uppreglad golvkonstruktion och utreglade väggar",
+      "body": "Betongplatta på mark med uppreglat och isolerat golv samt utreglade väggar mot grundmurar. Befintliga konstruktioner riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador. Detta i sin tur kan leda till mikrobiella skador så som mögel och röta (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. För att kunna konstatera om reglade golv-/väggsyllar samt utreglade källarväggar har fuktskador erfordras att man utför konstruktionsingrepp, fuktmätningar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__kaseinspackel__006",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Kaseinspackel",
+      "body": "Mellan 1977 till 1983 användes kasein i flytspackel för avjämning av golv. När fukt kommer i kontakt med flytspacklet hydrolyseras spacklet och bildar ammoniak, aminer, svavelföreningar och alkoholer. De avgivna ämnena, främst ammoniak, förändrar färgen i golvmaterialen, till exempel mörknade ek i trägolv och färgen hos PVC-mattor förändrades. Man kan också känna en stickande lukt. Lukten som man tror är aminoacetofenon, känner människan vid en halt som ligger under vad man kan analysera med gaskromatograf. I stället får man ta prov på spacklet och analysera detta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_okand_golvkonst__007",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med okänd golvkonstruktion",
+      "body": "Betongplatta på mark med uppbyggt övergolv med okänd konstruktionsutformning. Befintlig golvkonstruktion riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador. Detta i sin tur kan leda till mikrobiella skador så som mögel och röta (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. För att kunna konstatera om reglade golv-/väggsyllar har fuktskador erfordras att man utför konstruktionsingrepp, fuktmätningar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_flytande_golvko__008",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med flytande golvkonstruktion cellplast",
+      "body": "Betongplatta på mark med flytande övergolv med cellplast. Befintlig golvkonstruktion riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador. Detta i sin tur kan leda till mikrobiella skador så som mögel och röta (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. För att kunna konstatera om flytandegolv -/väggsyllar har fuktskador erfordras att man utför konstruktionsingrepp, fuktmätningar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_ovan_flytande_s__009",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med ovan flytande sandfylld golvkonstruktion",
+      "body": "Betongplatta på mark med flytande övergolv med sand. Befintlig golvkonstruktion riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador. Sanden kan innehålla organisktmaterial, spån, damm m.m. I detta typ av golv kan det också finnas risk för att betonggolven inte är tillräckligt rengjorda innan sanden lagts på. Detta i sin tur kan leda till mikrobiella skador så som mögel och röta (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. För att kunna konstatera om sandfyllning golv-/väggsyllar har fuktskador erfordras att man utför konstruktionsingrepp, fuktmätningar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_flytande_okand___010",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med flytande okänd golvkonstruktion",
+      "body": "Betongplatta på mark med flytande övergolv med okänd konstruktionsutformning. Befintlig golvkonstruktion riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador. Detta i sin tur kan leda till mikrobiella skador så som mögel och röta (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. För att kunna konstatera om reglade golv-/väggsyllar har fuktskador erfordras att man utför konstruktionsingrepp, fuktmätningar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_pa_mark_med_flytande_golv__011",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta på mark med flytande golv",
+      "body": "Betongplatta på mark utan underliggande termisk isolering, med ovanliggande flytande golv i form av isolering på ovansidan av betongplattan, är en annan mycket vanlig konstruktion från 1970-talet. Mikrobiell aktivitet uppstår i organiskt material i kontakt med betongplattan t.ex. träspån, skräp etc. samt i mineralull. Om det ligger en sandavjämning mot betongplattan blir denna fuktig, då sanden är naturligt förorenad sker mikrobiell tillväxt som i allmänhet medför mycket kraftig mikrobiell lukt i sanden. Ofta har man placerat ytter- och mellanväggsyllar direkt mot betongyta innan övergolvet lagts på, detta innebär att syllen löper stor risk att utsättas för RF&gt;75 % med fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__platta_pa_mark_utan_underliggande_isoler__012",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Platta på mark utan underliggande isolering 70 tal",
+      "body": "Detta är en mycket vanlig grundläggningsform vid 70 talet. Betongplatta på mark som saknar underliggande termisk isolering, är en känd riskkonstruktion avseende risk för fuktskador så som mögel och röta. Anledningen är att betongplattan oavsett kapillärbrytande skikt och fungerande dränering saknar en tillräcklig temperaturgradient respektive en ångspärr under betongplattan som förhindrar diffusiv uppfuktning av betongplattan från marken. Om det i, eller ovanpå, en fuktig betongplatta finns oskyddat organiskt material som t ex syllar, ingjutna reglar, isolering, byggskräp m.m. finns det risk för fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__platta_pa_mark_utan_underliggande_isoler__013",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Platta på mark utan underliggande isolering",
+      "body": "Detta är en mycket vanlig grundläggningsform vilket ofta råkar ut för skadefall p.g.a. den höga halten byggfukt i den platsgjutna betongen och den höga fukthalten i marken. Under plattan skall det finnas ett dränerande och kapillärbrytande skikt vilket bör bestå av material med liten kapillär stighöjd och med diffusionsöppen struktur. Isoleringsmaterialet bör ligga under plattan vilket är bra ur fuktteknisk synpunkt. En betongplatta direkt på marken förhindrar den naturliga avdunstningen av fukt och kommer så småningom att stå i jämvikt med markens fukttillstånd. Om det i, eller ovanpå, en fuktig betongplatta finns oskyddat organiskt material som t ex syllar, ingjutna reglar, isolering, byggskräp m.m. finns det risk för en mikrobiell tillväxt så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__betongplatta_s_k_lecaplatta__014",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Betongplatta s.k. Lecaplatta",
+      "body": "Betongplatta på mark ovan underliggande isolering av lös- eller cementstabiliserad leca är en konstruktion som kan medföra risk för fukt- och mikrobiella skador. Under plattan skall det finnas ett dränerande och kapillärbrytande skikt vilket bör bestå av material med liten kapillär stighöjd och med diffusionsöppen struktur. Isoleringsmaterialet bör ligga under plattan vilket är bra ur fuktteknisk synpunkt. En betongplatta direkt på marken förhindrar den naturliga avdunstningen av fukt och kommer så småningom att stå i jämvikt med markens fukttillstånd. Om det i, eller ovanpå, en fuktig betongplatta finns oskyddat organiskt material som t ex syllar, ingjutna reglar, isolering, byggskräp m.m. finns det risk för en mikrobiell tillväxt så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__lag_sockel__015",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Låg sockel",
+      "body": "Låg sockel lokalt, dvs byggnaden är marknära. En låg sockelhöjd är en risk ur fuktsynpunkt. Risk finns för fuktupptag i grundmur vilket kan medföra en ökad fuktbelastning på grundmur/sockel med efterföljande fuktskador så som mögel, röta",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__golvvarme__016",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "Golvvärme",
+      "body": "Golvvärmen ger upphov till en värmekudde under huset när den är på. Storleken på värmekudden beror på isoleringen under golvvärmen. Med dålig isolering blir värmekudden stor och med bra isolering blir den liten. Då golvvärmen stängs av under sommarhalvåret blir marken varmare än golvbjälklaget. Fukten vandrar då uppåt och riskerar att skada golvkonstruktionen. Golvvärme i källare utan underliggande värmeisolering kan ge upphov till flera fuktrelaterade problem. Exempelvis kan fukt från det varma golvet leda till skador så som mögel och röta i angränsande rum/konstruktioner, eftersom fukten vandrar med värmen. Då fukten kommer i kontakt med täta skikt, såsom en golvmatta, uppstår risk för kondens.",
+      "confidence": "medium"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__untitled__017",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "",
+      "body": "Äldre Grundtyp:",
+      "confidence": "low"
+    },
+    {
+      "id": "grundlaggning_betongplatta_ell__untitled__018",
+      "category": "GRUNDLÄGGNING BETONGPLATTA ELLER SULOR",
+      "title": "",
+      "body": "Granitväggar och mellangjutna betonggolv. Man ska räkna med att om golven är målade kan färgen lätt flagna när det finns en naturlig fuktvandring från marken under betongen.",
+      "confidence": "low"
+    },
+    {
+      "id": "balkong__untitled__001",
+      "category": "BALKONG",
+      "title": "",
+      "body": "Det föreligger alltid risk med äldre balkonger. Träbjälkar kan vara angripna av rötskador vilket kan var mycket svårt att upptäcka då dessa oftast endast kan kontrolleras från marken.",
+      "confidence": "low"
+    },
+    {
+      "id": "balkong__untitled__002",
+      "category": "BALKONG",
+      "title": "",
+      "body": "Träbjälkar inbyggda/förlängda golvåsar i vägg är alltid riskkonstruktioner som man vanligtvis undviker vid dagens byggnationer. Regelbunden kontroll samt noggrant underhåll vad det avser bl.a. impregnering av ändträ i träbjälkar krävs. Man bör vara observant på eventuella synliga skador i golv i anslutning till balkong samt i undervåningens vägg/takvinkel.",
+      "confidence": "low"
+    },
+    {
+      "id": "kallarvaggar__untitled__001",
+      "category": "KÄLLARVÄGGAR",
+      "title": "",
+      "body": "Inklädda grundmursväggar med okänd konstruktionsutformning. För bättre bedömning av de utreglade väggarna ur fuktsynpunkt erfordras konstruktionsingrepp, fuktmätningar etc. Lämpligt är att montera inspektionsluckor för att få information av förhållandet i väggen före köpet och för fortlöpande kontroller av förhållandet i väggarna och framtida underhållsbehov.",
+      "confidence": "low"
+    },
+    {
+      "id": "kallarvaggar__inspektionslucka__002",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Inspektionslucka",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "kallarvaggar__ew_element__003",
+      "category": "KÄLLARVÄGGAR",
+      "title": "EW element",
+      "body": "Denna typ av grundmurar innebär en påtaglig risk för fukt- och mikrobiella skador (i dagligt tal mögel) så som mögel och röta. Orsaken till detta är bl.a. att nedre kant väggreglar i normalfallet gjutits in i betongplattan och pga. att fuktmässiga förutsättningar för mikrobiell tillväxt i normalfallet föreligger i konstruktionen (i vart fall i nedre kant). Dessutom kan det finnas risk för kondensskador i konstruktionen (särskilt mot grundmursdel ovan mark). Beroende av vilken typ eller system man använt för utvändig fuktisolering så kan det även finnas risk för läckage i elementskarvar pga. rörelser, åldersutmattning i tätmassor mm. Utvändig fuktisolering enligt system Platon, Pordrän, Dränisol eller liknande system minskar risker för inläckage via elementens skarvar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kallarvaggar__inkladda_kallarvaggar__004",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Inklädda källarväggar",
+      "body": "Invändig isolering på källarvägg är en riskkonstruktion med avseende på fukt- och mikrobiella skador (i dagligt tal mögel) så som mögel och röta eftersom eventuell fukt i väggen inte kan torka ut, varken utåt eller inåt, utan hindras av isolering och täta skikt. Dessutom medför inklädda grundmursväggar att det inte går att se eventuella sprickor eller brister i utvändig fuktisolering. Lämpligt är att montera inspektionsluckor för att få information av förhållandet i väggen före köpet och för fortlöpande kontroller av förhållandet i väggarna och framtida underhållsbehov.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kallarvaggar__inspektionslucka__005",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Inspektionslucka",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "kallarvaggar__souterrangplan_med_pareglade_vaggar__006",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Souterrängplan med påreglade väggar",
+      "body": "Souterrängplan med påreglade väggar och golvkonstruktioner av trä. Befintliga utreglade väggar riskerar på grund av naturlig fuktpåverkan att drabbas av fuktskador så som mögel och röta. Detta i sin tur kan leda till mikrobiella skador (angrepp av mikroorganismer) som kan resultera i att mikrobiell lukt sprids till boendemiljön. Lämpligt är att montera inspektionsluckor för att få information av förhållandet i väggen före köpet och för fortlöpande kontroller av förhållandet i väggarna och framtida underhållsbehov.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kallarvaggar__inspektionslucka__007",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Inspektionslucka",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "kallarvaggar__tapetsering_pa_kallarvaggar__008",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Tapetsering på källarväggar",
+      "body": "Tapetsering har utförts direkt på vissa källarväggar. Förhållandet innebär att fukt kan bli instängt i muren med anledning av att det även finns tätskikt utsida grundmur. Tapeten hindrar/minskar naturlig uttorkning av grundmurars insida. Muren erfordras målas med diffusionsöppen (inte tät) färg.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kallarvaggar__inkladda_kallarvaggar__009",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Inklädda källarväggar",
+      "body": "Invändig inklädda källarväggar är en riskkonstruktion med avseende på fukt- och mikrobiella skador (i dagligt tal mögel) så som mögel och röta eftersom eventuell fukt i väggen inte kan torka ut, vilket kan resultera i att mikrobiell lukt sprids till boendemiljön. Dessutom medför inklädda grundmursväggar att det inte går att se eventuella sprickor eller brister i utvändig fuktisolering.",
+      "confidence": "medium"
+    },
+    {
+      "id": "kallarvaggar__iakttagelsefras_under_dranering_till_ova__010",
+      "category": "KÄLLARVÄGGAR",
+      "title": "Iakttagelsefras under dränering till ovan",
+      "body": "Grundmurar är inklädda vilket försvårar bedömning av dräneringsbehov. Inga fuktfläckar noterades på åtkomliga ytor. Se även notering på källarväggar ovan ang. luckor. Risk för mikrobiell tillväxt föreligger om den relativa fuktigheten (RF) i den omgivande luften är över 75% vilket motsvarar en fuktkvot (FK) på 17%.",
+      "confidence": "medium"
+    },
+    {
+      "id": "ventilation__flakt_tilluft__001",
+      "category": "VENTILATION",
+      "title": "Fläkt.                                        Tilluft",
+      "body": "Ventilationen av våtutrymmet bedöms inte vara fullgod. Lämplig förbättring av ventilationen. Exempelvis med ventilationsprofil i väggen samt med Fläkt för frånluft.",
+      "confidence": "medium"
+    },
+    {
+      "id": "ventilation__ventilation_sjalvdrag__002",
+      "category": "VENTILATION",
+      "title": "Ventilation självdrag",
+      "body": "Självdragsventilation är den vanligaste och äldsta typen av bostadsventilation. Principen bygger enkelt uttryckt, att den stigningskraft som sker då uppvärmd luft stiger upp igenom ventilationskanaler ut ur bostaden ger ett undertryck och ny luft fylls på genom ventiler eller otätheter. Självdragsventilation är extremt väderberoende och fungerar bäst vid den kallare årstiden då skillnaden mellan inne- och yttertemperatur är som störst.",
+      "confidence": "medium"
+    },
+    {
+      "id": "ventilation__vad_kan_goras_for_att_forbattra_sjalvdra__003",
+      "category": "VENTILATION",
+      "title": "Vad kan göras för att förbättra självdraget",
+      "body": "Först och främst är det viktigt att se till att det naturliga självdraget är aktivt. Ett mycket vanligt problem är att det inte finns något tillflöde av luft och därmed kan inte något frånflöde skapas. Montera därför friskluftsventiler i ”rena” utrymmen som sovrum, allrum och vardagsrum. Förstärk därefter självdraget med frånluftsfläktar i ”orena” utrymmen som bad, tvätt och toalett.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__iakttagelsefras_dranering_samt_eller_ris__001",
+      "category": "DRÄNERING",
+      "title": "Iakttagelsefras dränering samt eller risk (egen bedömning)",
+      "body": "Lämpligt vidare kontroller för att utreda om dräneringen och/eller andra vattenavvisande åtgärder bör förnyas. En inte fungerande dränering ökar risken för fuktrelaterade skador så som mögel och röta och misslukter.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__dranering_ar_aldre_an_20_ar__002",
+      "category": "DRÄNERING",
+      "title": "Dränering är äldre än 20 år",
+      "body": "Normal livslängd på dränering brukar anges till 20-30 år från utförandet vilket betraktas som dessa delars genomsnittliga tekniska livslängd, så kan systemet ha nedsatt funktion. Detta kan leda till fuktskador så som mögel och röta invändigt i konstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__stupror_ar_inte_anslutet_till_marklednin__003",
+      "category": "DRÄNERING",
+      "title": "Stuprör är inte anslutet till markledning",
+      "body": "Stuprör som inte är anslutet till markledning eller inte avleds på ett betryggande sätt från huset kan medföra en ökad fuktbelastning på grundmur/sockel med fuktrelaterade skador så som mögel och röta som möjlig följd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__kallare__004",
+      "category": "DRÄNERING",
+      "title": "Källare",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "dranering__utvandigt_fuktskydd_ar_aldre_an_20_ar__005",
+      "category": "DRÄNERING",
+      "title": "Utvändigt fuktskydd är äldre än 20 år",
+      "body": "Eftersom souterräng/källarplanets utvändiga fuktskydd (dagvattensystem, dräneringssystem samt fuktskydd utvändigt källarytterväggarna) är äldre än 20 år, vilket betraktas som dessa delars genomsnittliga tekniska livslängd, så kan systemet ha nedsatt funktion. Detta kan leda till fuktskador så som mögel och röta invändigt i källarplan.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__krypgrund_lecamurar_etc__006",
+      "category": "DRÄNERING",
+      "title": "Krypgrund lecamurar etc.",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "dranering__utvandigt_fuktskydd_ar_aldre_an_20_ar__007",
+      "category": "DRÄNERING",
+      "title": "Utvändigt fuktskydd är äldre än 20 år",
+      "body": "Eftersom krypgrundens utvändiga fuktskydd, dräneringssystem är äldre än 20 år, vilket betraktas som dessa delars genomsnittliga tekniska livslängd, så kan systemet ha nedsatt funktion. Detta kan leda till fuktskador så som mögel och röta invändigt i krypgrunden.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__draneringsarbeten__008",
+      "category": "DRÄNERING",
+      "title": "Dräneringsarbeten",
+      "body": "Vad gäller dräneringsarbeten skall dessa utföras med försiktighet så att inte eventuella grundvatten nivåer påverkas, vilket i förekommande fall kan ge påverkan på byggnaden i form av rörelser/sättning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__iakttagelsefras_under_dranering_till_ova__009",
+      "category": "DRÄNERING",
+      "title": "Iakttagelsefras under dränering till ovan",
+      "body": "Grundmurar är inklädda vilket försvårar bedömning av dräneringsbehov. Inga fuktfläckar noterades på åtkomliga ytor. Se även notering på källarväggar ovan ang. luckor.",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__sjalvrensande_lovsil__010",
+      "category": "DRÄNERING",
+      "title": "Självrensande lövsil",
+      "body": "Lämpligt att stuprör kompletteras med lövsilar vid marknivå för att underlätta rensning och minska mängden skräp som kommer ner i dagvattenledningar (minskar risken för stopp i dagvattenledningssystemet).",
+      "confidence": "medium"
+    },
+    {
+      "id": "dranering__untitled__011",
+      "category": "DRÄNERING",
+      "title": "",
+      "body": "Vid nuvarande och fortsatt användande som oinredd källare (gäller inte inklädda rum) och om man samtidigt accepterar att med jämna mellanrum puts- och målningsbättra grundmurar, är min bedömning att man kan acceptera nuvarande fukt som förekommer i källarväggar och betonggolv. Fukten bedöms inte påverka byggnadens goda bestånd. Grundprincipen är dock att ingen inredning av källaren bör utföras utan att först omisolera och omdränera grunden samt att fritt vatten inte skall tränga in i källaren förstås.",
+      "confidence": "low"
+    },
+    {
+      "id": "dranering__untitled__012",
+      "category": "DRÄNERING",
+      "title": "",
+      "body": "Utförande av dränering är okänt. Fukt och färgsläppor indikerar att dränering, fuktisolering utsida grundmur inte fungerar tillfredställande.",
+      "confidence": "low"
+    },
+    {
+      "id": "stomme_yttervaggar__motbyggd_stomme__001",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "Motbyggd stomme",
+      "body": "Stommen är motbyggd av altan, entrétrappa, trappa, balkong vilket kan medföra risk för fukttransport och rötskador i nederkant stomme/bottenstock.",
+      "confidence": "medium"
+    },
+    {
+      "id": "stomme_yttervaggar__timmerstomme__002",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "Timmerstomme",
+      "body": "I äldre timmerstommar är det vanligt med fukt-/röt, mögel skador och insektsangrepp i de nedre stockvarven (bottenstockar). En bättre bedömning av förhållandet i väggen erhålls via upptagande konstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "stomme_yttervaggar__lag_sockel__003",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "Låg sockel",
+      "body": "Låg sockel lokalt, dvs byggnaden är marknära. En låg sockelhöjd är en risk ur fuktsynpunkt. Risk finns för fuktupptag i grundmur vilket kan medföra en ökad fuktbelastning på grundmur/sockel med efterföljande fuktskador så som mögel, röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "stomme_yttervaggar__tillaggsisolerad_lattbetongsstomme__004",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "Tilläggsisolerad lättbetongsstomme",
+      "body": "Invändig tilläggsisolering av en lättbetongstomme kan medföra risk för fuktskador så som mögel och röta om tegelstommen blir uppfuktad.",
+      "confidence": "medium"
+    },
+    {
+      "id": "stomme_yttervaggar__grundmur_utanfor_fasadliv__005",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "Grundmur utanför fasadliv",
+      "body": "Grundmuren sticker lokalt utanför fasaden vilket medför att fukt kan gå in i stommen och orsaka skador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "stomme_yttervaggar__vaggsyllar__006",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "Väggsyllar",
+      "body": "Det föreligger risk att väggsyllar kan hamna i fuktig miljö om dessa inte fuktskyddats mot grundkonstruktionen. Detta kan leda till mikrobiella skador (i dagligt tal mögel) så som mögel och röta i syllarna. En bättre bedömning av förhållandet i väggen erhålls via upptagande konstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "stomme_yttervaggar__blabetong_fargad_lattbetong__007",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "Blåbetong, färgad lättbetong",
+      "body": "Blå lättbetong kan avge radon.",
+      "confidence": "medium"
+    },
+    {
+      "id": "stomme_yttervaggar__untitled__008",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "",
+      "body": "Sättningsfras (iakttagelse) eller risk bedöm själv.",
+      "confidence": "low"
+    },
+    {
+      "id": "stomme_yttervaggar__untitled__009",
+      "category": "STOMME/YTTERVÄGGAR",
+      "title": "",
+      "body": "Det förekommer mindre sprickor i grundmuren/källarväggen/fasaden/tegelfasaden. Vill man kontrollera huruvida sprickorna från eventuella rörelser i byggnaden är pågående eller inte, erfordras inborrning av dubbar i byggnadens sockel alt i anslutning till sprickor samt att precisionsavvägning av dubbarna utförs mot fast höjdfix. En sådan mätning bör ske regelbundet under minst ett år för att man ska kunna bedöma eventuella rörelser eller sättningar.",
+      "confidence": "low"
+    },
+    {
+      "id": "mellanbjalklag__klinkergolv__001",
+      "category": "MELLANBJÄLKLAG",
+      "title": "Klinkergolv",
+      "body": "Klinkergolv som ligger på något sviktande underlag medför risk för släpp och sprickbildningar pga. rörelser i underlaget.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mellanbjalklag__fuktflackar_under_radiator__002",
+      "category": "MELLANBJÄLKLAG",
+      "title": "Fuktfläckar under radiator",
+      "body": "Fuktfläckar på golv i anslutning till radiatorledningar noterades. Inga tecken på pågående läckage noterades vid besiktningstillfället vid stickprovskontroll med fuktindikator. En bättre bedömning av förhållandet i golvet erhålls via upptagande konstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "mellanbjalklag__untitled__003",
+      "category": "MELLANBJÄLKLAG",
+      "title": "",
+      "body": "Det förekommer vad som bedöms vara äldre fuktindikationer under diskbänken, torrt vid besiktningstillfället vid kontroll med fuktindikator. Enligt undertecknads uppfattning rör det sig troligen inte om pågående skada (extra kontroller bör alltid utföras vid framtida byte av golvbeläggning). Lämpligt märkning med färgpenna för att kontrollera om fuktindikationerna förändras över tiden och att fuktindikationerna hålls under uppsikt.",
+      "confidence": "low"
+    },
+    {
+      "id": "fasad__fasadpanelen_ar_i_behov_av_malning_under__001",
+      "category": "FASAD",
+      "title": "Fasadpanelen är i behov av målning/underhåll",
+      "body": "Fasadpanel och träkonstruktioner där målningsbehov finns riskerar pga. av sämre vattenavvisande förmåga att få fuktskador. Detta i sin tur kan i värsta fall leda till mögel och röta i panelen och bakomliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__untitled__002",
+      "category": "FASAD",
+      "title": "",
+      "body": "Fasadplåtar är spikade på utsida fasadpanel. Risk finns för fuktinträngning med efterföljande fuktskador så som mögel röta pga vatten kan tränga in mellan plåt och fasad.",
+      "confidence": "low"
+    },
+    {
+      "id": "fasad__untitled__003",
+      "category": "FASAD",
+      "title": "",
+      "body": "Inga synliga tecken på inläckage i anslutning till anslutande och/eller underliggande väggpartier noterades vid besiktningstillfället.",
+      "confidence": "low"
+    },
+    {
+      "id": "fasad__skarvad_panel__004",
+      "category": "FASAD",
+      "title": "Skarvad panel",
+      "body": "Fasadpanel som är skarvad kan medföra risk för fuktrelaterade skador i träfasaden och bakomliggande konstruktion.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__klangvaxt_finns_pa_fasad__005",
+      "category": "FASAD",
+      "title": "Klängväxt finns på fasad",
+      "body": "Risk finns att växter ökar fuktbelastningen och fördröjer uttorkningen på träfasader som med tiden kan orsaka fuktrelaterade skador så som mögel och röta. Risk finns även att den klänger upp i takkonstruktionen och orsakar skador.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__sprickor_i_putsfasad__006",
+      "category": "FASAD",
+      "title": "Sprickor i putsfasad",
+      "body": "Sprickor i putsfasader är en risk ur fuktsynpunkt. Risk finns för fuktinträngning i sprickorna, med putssläpp och fuktrelaterade skador i bakomvarande konstruktioner som möjlig följd. Vintertid finns även risk för sönderfrysning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__spricka_i_tegelfasad__007",
+      "category": "FASAD",
+      "title": "Spricka i tegelfasad",
+      "body": "Sprickor i tegelfasader är en risk ur fuktsynpunkt. Risk finns för fuktinträngning i sprickorna,",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__untitled__008",
+      "category": "FASAD",
+      "title": "",
+      "body": "med fog- och tegelsläpp och fuktrelaterade skador i bakomvarande konstruktioner som möjlig följd. Vintertid finns även risk för sönderfrysning.",
+      "confidence": "low"
+    },
+    {
+      "id": "fasad__internt_vanligt_pa_hus_fran_94_och_bakat__009",
+      "category": "FASAD",
+      "title": "Internt, vanligt på hus från 94 och bakåt",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "fasad__avsaknad_av_luftspalt_bakom_fasadpanelen__010",
+      "category": "FASAD",
+      "title": "Avsaknad av luftspalt bakom fasadpanelen",
+      "body": "Avsaknad av luftspalt bakom fasadpanelen innebär att panelen har sämre möjlighet att torka ut vid uppfuktning. Det kan medföra risk för fuktrelaterade skador så som mögel och röta i träfasaden och i bakomliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__noterade_brister_i_fasad__011",
+      "category": "FASAD",
+      "title": "Noterade brister i fasad",
+      "body": "Noterade brister i fasaden medför ökad risk för fuktinträngning med möjliga rötskador som följd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__torrsprickor__012",
+      "category": "FASAD",
+      "title": "Torrsprickor",
+      "body": "Torrsprickor och färgsläpp på träkonstruktioner utomhus så som fasadpaneler, taksargar, dörrar och fönster etc. medför ökad risk för fuktinträngning med möjliga rötskador som följd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__sockel_sticker_utanfor_fasadliv__013",
+      "category": "FASAD",
+      "title": "Sockel sticker utanför fasadliv",
+      "body": "Grundmursockel sticker ut utvändigt fasadliv. Utstickande grundsockel kan innebära risk för kvarstående vatten samt fukt och röta i bjälklag och stomme.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__avsaknad_av_draneringshal_i_tegelfasad__014",
+      "category": "FASAD",
+      "title": "Avsaknad av dräneringshål i tegelfasad",
+      "body": "Avsaknad av dräneringshål kan innebära risk för fuktrelaterade skador i stommen. För att säkerställa stommens status måste konstruktionsingrepp utföras i fasad.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__puts_pa_trastomme__015",
+      "category": "FASAD",
+      "title": "Puts på trästomme",
+      "body": "Puts på trästommar är allmänt sett sprickbenägna och erfordrar regelbundna lagningar. Sprickor bör lagas för att inte vatten ska tränga in och orsaka mer omfattande skador i puts eller trästomme. Speciellt bottenstock/syll brukar kunna vara utsatt för fuktskador. En bättre bedömning av förhållandet i väggen erhålls via upptagande konstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fasad__traregelvagg_isolerad_med_styrencellplas__016",
+      "category": "FASAD",
+      "title": "Träregelvägg isolerad med Styrencellplast/mineralull direkt mot kartonggips/plywoodskiva utan luftspalt",
+      "body": "Avsaknad av luftspalt innebär att inträngande fukt kan rinna på insida vägg och fukta upp konstruktionen med efterföljande fuktskador. Om väggen är försedd med luftspalt skulle risken för skador minska. Vid misstanke om redan uppkomna skador i väggen bör man göra en skadeutredning med okulär kontroll och fuktmätning. En bättre bedömning av förhållandet i väggen erhålls via upptagande konstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__fonster_lite_rota_forstadiet_till_rota__001",
+      "category": "FÖNSTER",
+      "title": "FÖNSTER lite röta, förstadiet till röta",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "fonster__alt_1__002",
+      "category": "FÖNSTER",
+      "title": "Alt 1",
+      "body": "Fönster i behov av underhåll (målning/kittning) men uppvisar för övrigt normala ålders- och förslitningsskador.  Slumpvis valda stickprovskontroller i vissa fönsterbågar och karmar påvisade lokalt fuktabsorption dvs. förstadier till rötangrepp. Renovering erfordras alternativt bör byte kalkyleras av skadade fönster.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__alt_2__003",
+      "category": "FÖNSTER",
+      "title": "Alt 2",
+      "body": "Röta i fönsterkarm noterades i fönster beläget XX. Lämpligt skyndsamt utbyte av rötskadat område med god marginal för att minimera risken för följdskador på bakomliggande konstruktioner, samt för att slippa byta hela fönstret i ett senare skede.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__isolerglas_ar_aldre_an_20_ar__004",
+      "category": "FÖNSTER",
+      "title": "Isolerglas är äldre än 20 år",
+      "body": "Isolerglasfönster har när det gäller tätningen mellan fönsterrutorna en genomsnittlig teknisk livslängd på 20 år. Vilket betyder att tätningen mellan fönsterrutorna är sämre vilket kan leda till att rutorna missfärgas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__takfonster__005",
+      "category": "FÖNSTER",
+      "title": "Takfönster",
+      "body": "Takfönster är en konstruktion som medför ökad risk för inläckage samt kondens på kalla glasrutor. Regelbunden kontroll och underhåll erfordras därför av beslag och tätningar vid genomföring yttertak (särskilt utvändig tätning i överkant mot takpannor). Kondens på insida takfönster kan ge upphov till fuktskador på fönsterbågar, fönstersmygar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__synliga_skador_takfonster__006",
+      "category": "FÖNSTER",
+      "title": "Synliga skador takfönster",
+      "body": "Med avseende på att det förekommer synliga skador omkring takfönster kan det även föreligga risk för skador i anslutande konstruktionsdelar. Friläggning och kontroll krävs för en bättre bedömning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__skador_i_fonsterkarm__007",
+      "category": "FÖNSTER",
+      "title": "Skador i fönsterkarm",
+      "body": "Rötskador i bottenstycke på fönster noterades vilket föreligger risk att vatten kan ha trängt ner i väggen och även orsakat fukt-/rötskador där. Friläggning och kontroll krävs för en bättre bedömning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__fonsterbleck_saknas__008",
+      "category": "FÖNSTER",
+      "title": "Fönsterbleck saknas",
+      "body": "Det saknas fönster-/droppbleck ovan fönster vilket innebär en ökad risk att vatten kan tränga in och orsaka skador i vägg och/eller fönster. Friläggning och kontroll krävs för en bättre bedömning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__felaktigt_monterade_fonsterbleck_bakfall__009",
+      "category": "FÖNSTER",
+      "title": "Felaktigt monterade fönsterbleck (bakfall, otäta mot karm)",
+      "body": "Brister i infästningar och anslutningar vid fönster noterades vilket kan medföra risk för fuktskador i anslutande väggpartier. Friläggning och kontroll krävs för en bättre bedömning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__rotskador_fonsterdorr__010",
+      "category": "FÖNSTER",
+      "title": "Rötskador fönsterdörr",
+      "body": "Med anledning av att det konstaterats rötskador i XX kan det föreligga risk att vatten kan ha trängt in i anslutande konstruktionsdelar och även orsakat fukt-/rötskador där. Friläggning och kontroll krävs för en bättre bedömning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "fonster__fonster_ar_i_behov_av_malning_underhall__011",
+      "category": "FÖNSTER",
+      "title": "Fönster är i behov av målning/underhåll",
+      "body": "Fönster och träkonstruktioner där målningsbehov finns riskerar pga. av sämre vattenavvisandeförmåga att få fuktskador, detta i sin tur kan i värsta fall leda till rötskador i fönstervirke och bakomliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__untitled__001",
+      "category": "VIND",
+      "title": "",
+      "body": "Internt, viktig fras, kommer du inte åt vinden annat än från luckan in med denna fras!",
+      "confidence": "low"
+    },
+    {
+      "id": "vind__vind_gangbrygga__002",
+      "category": "VIND",
+      "title": "Vind gångbrygga",
+      "body": "Lämpligt att gångbryggor monteras på vinden, för att besiktning av vinden skall kunna ske utan risk för genomtrampning och för att isolering inte skall trampas ner och därigenom bli försämrad ur värmeisoleringssynpunkt. En gångbrygga innebär dessutom att man som dels inför förvärvet av fastigheten har möjlighet att upptäcka pågående skador/problem och dels som fastighetsägare har möjlighet att hålla ett \"känsligt\" utrymme under fortlöpande/regelbunden uppsikt/kontroll vilket ger bättre möjlighet att förhindra att större skador uppstår. Vinden är inte tillgänglig till sin helhet pga avsaknad av krypplank. Kontroll av hela vinden ingår i undersökningsplikten.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__untitled__003",
+      "category": "VIND",
+      "title": "",
+      "body": "Risk för mikrobiell tillväxt föreligger om den relativa fuktigheten (RF) i den omgivande luften är över 75% vilket motsvarar en fuktkvot (FK) på 17%.",
+      "confidence": "low"
+    },
+    {
+      "id": "vind__inte_tillganglig_vind__004",
+      "category": "VIND",
+      "title": "Inte tillgänglig vind",
+      "body": "Vinden är inte tillgänglig pga tillträde saknas inte var möjligt. Kontroll av hela vinden ingår i undersökningsplikten.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__tillbyggd_vind__005",
+      "category": "VIND",
+      "title": "Tillbyggd vind",
+      "body": "Tillbyggda vindar kan innebära ökad risk för kondensation eftersom den moderna vinden blir kallare och den gamla vinden ofta får ett ökat fukttillskott. För minskad risk för fuktskador i tak och på vindar erfordras att man skiljer de båda vindarna åt genom en isolerad mellanvägg samt ser till att det finns tillräcklig ventilation i byggnaden.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__vind_isolering_i_takfot__006",
+      "category": "VIND",
+      "title": "Vind isolering i takfot",
+      "body": "Isolering har lagts mot yttertaksinbrädning i takfot. Luftning av takfoten/parallelltaket uteblir. Förhållandet ökar risken för kondens - fuktrelaterade skador. Erfordras att justering utförs tex genom att man sticker ner en rätt kapad oljehärdad masonitskiva samt virke 22x45 mm och vrider om virke för att få upp luftningen. Om man vid åtgärdandet påträffar missfärgat virke erfordras renborstning och fungicidbehandling alternativt lokalt utbyte om det föreligger röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__vind_gangbrygga__007",
+      "category": "VIND",
+      "title": "Vind gångbrygga",
+      "body": "Lämpligt att gångbryggor monteras på vinden, för att besiktning av vinden skall kunna ske utan risk för genomtrampning och för att isolering inte skall trampas ner och därigenom bli försämrad ur värmeisoleringssynpunkt. En gångbrygga innebär dessutom att man som dels inför förvärvet av fastigheten har möjlighet att upptäcka pågående skador/problem och dels som fastighetsägare har möjlighet att hålla ett \"känsligt\" utrymme under fortlöpande/regelbunden uppsikt/kontroll vilket ger bättre möjlighet att förhindra att större skador uppstår. Vinden är inte tillgänglig till sin helhet pga avsaknad av krypplank. Kontroll av hela vinden ingår i undersökningsplikten.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__inte_tillganglig_vind__008",
+      "category": "VIND",
+      "title": "Inte tillgänglig vind",
+      "body": "Vinden är inte tillgänglig pga avsaknad av krypplank. Kontroll av hela vinden ingår i undersökningsplikten.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__vind_mindre_mogel__009",
+      "category": "VIND",
+      "title": "Vind mindre mögel",
+      "body": "Det finns mindre svärtningar (i dagligt tal mögel) på undersida vindstaket. Lämpligt att hålla koll på dessa t.ex. genom fotografering eller märkning med färgpenna runt missfärgning för att utläsa förändringar. Om förändringar sker bör sakkunnig kontaktas för vidare undersökningar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__vind_mindre_fuktrosor__010",
+      "category": "VIND",
+      "title": "Vind mindre fuktrosor",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "vind__vind_fuktrosor__011",
+      "category": "VIND",
+      "title": "Vind fuktrosor",
+      "body": "Det finns mindre fuktrosor i undertaket. Vanligt med denna typ av underlagstäckning. Lämpligt att hålla koll på dessa t.ex. genom fotografering eller märkning med färgpenna runt missfärgning för att utläsa förändringar. Om förändringar sker bör sakkunnig kontaktas för vidare undersökningar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__fungicidbehandlad_vind__012",
+      "category": "VIND",
+      "title": "Fungicidbehandlad vind",
+      "body": "Det finns svärtningar (i dagligt tal mögel) på undersida vindstaket. Enligt uppgift har vinden fungicidbehandlats år XXXX av XXXX. Behandling av vind är oftast en temporär lösning. Man tar inte bort källan till möglet utan stoppar upp en pågående process. Min bedömning är att missfärgningar i undertaket tyder på kondens (troligtvis pågående). Detta tyder på att man behöver se över ventilationen i byggnaden. Lämpligt att man undersöker fukttillskottet/ventilation inomhus samt eventuell förbättring ventilation på vind.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__diffusionssparr_saknas_i_vindsbjalklaget__013",
+      "category": "VIND",
+      "title": "Diffusionsspärr saknas i vindsbjälklaget",
+      "body": "Avsaknad av ångspärr innebär att det kan ske ett ökat tillskott av varm fuktig inomhusluft genom vindsbjälklaget upp till vind. Detta kan medföra ökad risk för kondensutfällning och risk för fuktskador i takkonstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__diffusionssparr_av_papp_i_vindsbjalklage__014",
+      "category": "VIND",
+      "title": "Diffusionsspärr av papp i vindsbjälklaget",
+      "body": "Ångspärren (pappen) är vindtät men släpper i viss omfattning igenom fuktig inomhusluft i skarvar, genomföringar etc. som kan kondensera mot kall yttertaksyta. Detta kan medföra ökad risk för kondensutfällning och risk för fuktskador i takkonstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__parallelltak__015",
+      "category": "VIND",
+      "title": "Parallelltak",
+      "body": "Parallelltak är inte åtkomliga för besiktning och bedömning med mindre än att förstörande konstruktionsingrepp utförs.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__untitled__016",
+      "category": "VIND",
+      "title": "",
+      "body": "Riskanalys:\tParallelltak är inte åtkomliga för besiktning och bedömning med mindre än att förstörande konstruktionsingrepp utförs. Ett parallelltak bygger på principen att innertaket följer yttertaket och att det därmed inte finns något vindsutrymme att inspektera. Risk för kondensbildning finns till följd av att varm luft från inomhusmiljön stiger och möter kall uteluft i parallelltakskonstruktionen, för att ett parallelltak ska fungera krävs att det finns väl tilltagna luftspalter och att taket är ventilerat.",
+      "confidence": "low"
+    },
+    {
+      "id": "vind__diffusionssparr_av_aldre_plast_i_vindsbj__017",
+      "category": "VIND",
+      "title": "Diffusionsspärr av äldre plast i vindsbjälklaget",
+      "body": "Man kan inte förvänta sig samma täthet och beständighet som plastfolie från mitten av 70-talet och senare. Detta medför att plastfolien i viss omfattning kan släppa igenom fuktig inomhusluft som kan kondensera mot yttertaksyta. Detta kan medföra ökad risk för kondensutfällning och risk för fuktskador i takkonstruktionen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__untitled__018",
+      "category": "VIND",
+      "title": "",
+      "body": "Det kunde inte fastställas att det finns luftspalt. Avsaknad av luftspalt kan medföra uppkomst av fuktrelaterade skador så som mögel och röta.",
+      "confidence": "low"
+    },
+    {
+      "id": "vind__isolering_mot_takinbradnin__019",
+      "category": "VIND",
+      "title": "Isolering mot takinbrädnin",
+      "body": "Isolering har lagts mot yttertaksinbrädning i takfot. Förhållandet ökar risken för kondens - fuktrelaterade skador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vind__untitled__020",
+      "category": "VIND",
+      "title": "",
+      "body": "Tilläggsisolerad vind:",
+      "confidence": "low"
+    },
+    {
+      "id": "vind__untitled__021",
+      "category": "VIND",
+      "title": "",
+      "body": "När vinden tilläggsisoleras, blir vinden kallare detta gör att fuktig luft från bostaden tränger upp genom springor eller andra genomföringar till vinden bildas lätt kondens mot kalla ytor som yttertakets brädor mm.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__takpannor_lyftes_stickprovsmassigt_bort___001",
+      "category": "YTTERTAK",
+      "title": "Takpannor lyftes stickprovsmässigt bort och kontrollerades under. ( viktig iakttagelsefras)",
+      "body": "Huv (regnskydd) saknas ovan skorsten. Lämpligt montering av huv för att minska risken föratt skorsten/rökkanaler uppfuktas av snö och regn.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__untitled__002",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Inget särskilt att notera som avviker från vad som bedöms vara normalt för takkonstruktionen och/eller som utgör normalt åldersslitage.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__hogt_yttertak__003",
+      "category": "YTTERTAK",
+      "title": "Högt yttertak",
+      "body": "Med anledning av takpannor ligger lokalt skevt/ned hasat erfordras en fullständig översyn av yttertaket, takpappens kondition, anslutningar, takpannors läge, justering samt rensning av hängrännor. Skylift kan behövas pga takets branta lutning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__untitled__004",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Takpannor lyftes stickprovsmässigt bort och kontrollerades under.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__005",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Takpannor samt underlagspappen och läkten är äldre vilket innebär att man bör kalkylera med att lägga om yttertaket pga ålder. Lämpligt skyndsamt utbyte av yttertaket med god marginal för att minimera risken för följdskador på bakomliggande konstruktioner.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__006",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "-flertal spruckna pannor.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__007",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "-mossa, alger på pannor.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__008",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "-missfärgningar i takfot.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__009",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "-väderbitna hängrännor, vindskivor.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__010",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Fukthållande mossa noterades på tak.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__taksteg_som_tras_in_under_takpannor_kan___011",
+      "category": "YTTERTAK",
+      "title": "Taksteg som träs in under takpannor kan behövas",
+      "body": "Taksteg.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__untitled__012",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "På grund av uppmärksammad skada på XX lokalt runt om huset erfordras närmare kontroll för att avgöra omfattning av skadan och eventuella åtgärder.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__snotackta_takytor__013",
+      "category": "YTTERTAK",
+      "title": "Snötäckta takytor",
+      "body": "Då yttertaket var snötäckt vid besiktningstillfället kunde inte besiktning av dessa delar genomföras. För att kontrollera taket är det lämpligt att en kompletterande besiktning görs när taket är snöfritt.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__untitled__014",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Vid kontroll av innertak och väggar kunde undertecknad inte se några signaler/tecken på att detförekommer läckage genom taket (typ fuktrosor, fuktfläckar etc.).",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__015",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Papptaket är äldre än 15 år.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__016",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Tätskiktet på ett platt / låglutande tak har enligt vår bedömning en genomsnittlig teknisk livslängd på 15 år. Eftersom husets tätskikt är äldre har det ett minskat motstånd mot vattengenomträngning. Detta i sin tur kan leda till att tak konstruktionen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__platta_och_laglutande_tak__017",
+      "category": "YTTERTAK",
+      "title": "Platta och låglutande tak",
+      "body": "Platta och låglutande tak utgör alltid riskkonstruktioner för läckage med anledning av att vatten kan bli stående på taket. Låglutande tak är känsliga för såväl läckage som kondensbildning. Risk finns för mögel och röta i underliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__untitled__018",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Äldre takpapp under betongpannor på huvudbyggnadMed avseende på att takpappen bedöms vara åldersmässigt avskriven bör man vara uppmärksam på att skador så som mögel och röta kan finnas i undertaken samt att risken för läckage i yttertaket ökar.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__takpapp_under_takpannor__019",
+      "category": "YTTERTAK",
+      "title": "Takpapp, under takpannor",
+      "body": "Yttertaksbeläggning, takpapp under bedöms vara i slutet av sin tekniska livslängd. Vilket gör att man bör kalkylera med omläggning på grund av ålder. Detta i sin tur kan leda till att tak konstruktionen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__kort_takoverhang_gavlar__020",
+      "category": "YTTERTAK",
+      "title": "Kort taköverhäng gavlar",
+      "body": "Taksprånget är kort vilket ökar vattenbelastningen på fasad och fönster. Detta kan medföra risk för vatteninträngning i väggen och i anslutning till fönster. Mögel och röta kan bildas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__takkupor__021",
+      "category": "YTTERTAK",
+      "title": "Takkupor",
+      "body": "Takkupor utgör känsliga konstruktioner som kräver extra noggrant underhåll. Risk finns för läckage med efterföljande fuktskador så som mögel och röta i underliggande konstruktioner pga låg taklutning och brister i anslutningar, kondens på undersida plåt.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__genomforingar_i_tak__022",
+      "category": "YTTERTAK",
+      "title": "Genomföringar i tak",
+      "body": "Bristande täthet vid genomföringar kan medföra risk för läckage och fuktskador så som mögel och röta i underliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__spruckna_takpannor__023",
+      "category": "YTTERTAK",
+      "title": "Spruckna takpannor",
+      "body": "Bristande täthet vid takpannor kan medföra risk för läckage och fuktskador så som mögel och röta i underliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__yttertak_takpapp__024",
+      "category": "YTTERTAK",
+      "title": "Yttertak takpapp",
+      "body": "Tätskiktet av papp på ett platt tak har en genomsnittlig livslängd på 15 år. Eftersom ytskikten är äldre bör man kalkylera med att det inom kort bör utföras en renovering eller ett utbyte av tätskikten.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__tak_kontrollerat_fran_taklucka__025",
+      "category": "YTTERTAK",
+      "title": "Tak kontrollerat från taklucka",
+      "body": "Taket är endast kontrollerat från vindslucka. Undertecknad anser det vara förknippat med stor fara att klättra ut på taket pga takets lutning och avsaknaden av takbrygga samt lokala isfläckar. Ingen annan möjlighet fanns att inspektera taket.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__taksteg_amp_glidskydd_till_stege__026",
+      "category": "YTTERTAK",
+      "title": "Taksteg &amp; glidskydd till stege",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "yttertak__underlagstaket_bestar_av_trafiberskivor__027",
+      "category": "YTTERTAK",
+      "title": "Underlagstaket består av träfiberskivor",
+      "body": "Underlagstaket består av träfiberskivor. Då yttertaket består av träfiberskivor utan yttre täckning av papp under takbeklädnaden, finns risk att regnvatten/snö tränger in vid ogynnsam väderlek i skivskarvar med läckage på vindsutrymmet som följd. Med tiden kan även träfiberskivorna drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__takfonster__028",
+      "category": "YTTERTAK",
+      "title": "Takfönster",
+      "body": "Takfönster är en konstruktion som medför ökad risk för inläckage samt kondens på kalla glasrutor. Regelbunden kontroll och underhåll erfordras därför av beslag och tätningar vid genomföring yttertak (särskilt utvändig tätning i överkant mot takpannor). Kondens på insida takfönster kan ge upphov till fuktskador så som mögel och röta i anslutande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__fotplatar_saknas__029",
+      "category": "YTTERTAK",
+      "title": "Fotplåtar saknas",
+      "body": "Fotplåtar saknas vilket kan medföra ökad fuktbelastning och risk för skador så som mögel och röta i takfot och anslutande delar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__spruckna_takpannor__030",
+      "category": "YTTERTAK",
+      "title": "Spruckna takpannor",
+      "body": "Detta i sin tur kan leda till att tak konstruktionen drabbas av fuktskador så som mögel och röta i underliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__sprickor_och_blasor_i_takpappen__031",
+      "category": "YTTERTAK",
+      "title": "Sprickor och blåsor i takpappen",
+      "body": "Detta i sin tur kan leda till att tak konstruktionen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__enkelfalsad_takplat__032",
+      "category": "YTTERTAK",
+      "title": "Enkelfalsad takplåt",
+      "body": "Enkelfalsad plåt är inte lika tät som en modern dubbelfalsad plåt. Falsar/skarvar på plåtar kan med tiden kan förväntas bli otäta pga. rörelser i plåtarna. Detta i sin tur kan leda till att takkonstruktionen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__takplat__033",
+      "category": "YTTERTAK",
+      "title": "Takplåt",
+      "body": "Obehandlad takplåtsundersida kan avge kondens beroende på temperatur. Kondens kan droppa, rinna på undertaket och fuktrelaterade skador så som mögel och röta kan uppkomma på underliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__enkelfalsad_takplat_obehandlad_takplat__034",
+      "category": "YTTERTAK",
+      "title": "Enkelfalsad takplåt, obehandlad takplåt",
+      "body": "Enkelfalsad plåt är inte lika tät som en modern dubbelfalsad plåt. Falsar/skarvar på plåtar kan med tiden kan förväntas bli otäta pga. rörelser i plåtarna. Obehandlad takplåtsundersida kan avge kondens beroende på temperatur. Kondens kan droppa, rinna på undertaket kringliggande konstruktioner. Detta i sin tur kan leda till att takkonstruktionen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__yttertaket_ar_flackt__035",
+      "category": "YTTERTAK",
+      "title": "Yttertaket är flackt",
+      "body": "Vid flacka taklutningar föreligger risk för vatteninträngning under takbeklädnad vid kraftigare regn, blåst och snö som kan läcka in i skarvar. Detta i sin tur kan leda till att takkonstruktionen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__fukthallande_mossa_pa_taket__036",
+      "category": "YTTERTAK",
+      "title": "Fukthållande mossa på taket",
+      "body": "Mossa kan hålla kvar snö och fördröjer uttorkning av taket. Detta i sin tur kan leda till att takkonstruktionen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__noteringar_yttertak__037",
+      "category": "YTTERTAK",
+      "title": "Noteringar yttertak",
+      "body": "Bristande täthet vid noterade detaljer under iakttagelser på yttertaket kan medföra risk för läckage och fuktskador så som mögel och röta i underliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__hangranna_svackar__038",
+      "category": "YTTERTAK",
+      "title": "Hängränna svackar",
+      "body": "Då hängrännor lutar felaktigt (bakfall) finns risk att dessa svämmar över med fuktrelaterade skador så som mögel och röta i takfot och fasad som möjlig följd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__barr_och_lov_i_ranndal__039",
+      "category": "YTTERTAK",
+      "title": "Barr och löv i ränndal",
+      "body": "Detta kan medföra att vatten tränger över. Detta i sin tur kan leda till att takkonstruktionen och ytterväggen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__vatten_fran_ranndal_rinner_ut_pa_ytterta__040",
+      "category": "YTTERTAK",
+      "title": "Vatten från ränndal rinner ut på yttertak",
+      "body": "Detta kan medföra att vatten tränger in under takpannor. Detta i sin tur kan leda till att takkonstruktionen och ytterväggen drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__takpannor_ligger_ur_lage__041",
+      "category": "YTTERTAK",
+      "title": "Takpannor ligger ur läge",
+      "body": "Från takluckan och från mark noterades att takpannor hasat ned lokalt samt ligger snett. Justering av takpannor erfordras omgående. Risk finns att takpappen fuktas upp och fuktskador så som mögel och röta uppkommer i underliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__untitled__042",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Nockkappa alt.  INCLUDEPICTURE \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.plathuset.com/beslag/3.jpg\" \\* MERGEFORMATINET  nockplåt",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__043",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "För minskad risk för inträngning vatten - snö samt skräp under pannor erfordras montage av s.k. nockskydd till nock.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__pagaende_taklackage__044",
+      "category": "YTTERTAK",
+      "title": "Pågående takläckage",
+      "body": "Med anledning av att det konstaterats pågående takläckage kan det föreligga risk att vatten kan ha trängt in i anslutande konstruktionsdelar och även orsakat fukt- mögel/rötskador där. Friläggning och kontroll krävs för en bättre bedömning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__invandiga_takavlopp__045",
+      "category": "YTTERTAK",
+      "title": "Invändiga takavlopp",
+      "body": "Invändiga takavlopp är generellt känsliga konstruktioner för uppkomst av läckage. Det är viktigt att hålla rent i anslutning till takavloppen. Invändiga takavlopp innebär risk för läckage samt kondensutfällning mot rör om kondensisolering saknas mögel och röta kan bildas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__avluftningsror_avloppsventiltion__046",
+      "category": "YTTERTAK",
+      "title": "Avluftningsrör (avloppsventiltion)",
+      "body": "Avluftningsrör genom yttertaket finns. Risk finns att invändigt stammrör i plåtröret är otäta mot varandra. Risk finns att kondensvatten rinner genom skarv och fuktar upp underliggande konstruktioner som drabbas av fuktskador så som mögel och röta.",
+      "confidence": "medium"
+    },
+    {
+      "id": "yttertak__untitled__047",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Stråtak/VasstakViktigt med årlig tillsyn och kontinuerligt underhåll. Ett stråtaks svagaste punkt är nocken med mörningen, som måste åtgärdas ofta, helst vart femte år. Är nocken otät och det börjar läcka in vatten så kan underliggande konstruktion bli rötskadad, vilket kan medföra stora reparationer och kostnader. Det är därför viktigt att fastighetsägaren håller uppsikt över taket genom t.ex. årliga besiktningar för att kunna åtgärda mindre skador i tid.",
+      "confidence": "low"
+    },
+    {
+      "id": "yttertak__untitled__048",
+      "category": "YTTERTAK",
+      "title": "",
+      "body": "Info Stråtak/Vasstak: Hela åldrandeprocessen, från nylagt tak till det att täckespröten börjar synas, kan för ett vällagt tak vara upp emot 40 till 50, kanske till och med 60 år.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__001",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Vi bedömer det lämpligt att en godkänd våtrumsentreprenör kontaktas för vidare kontroll och åtgärdsförslag.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__golvbrunnen_ar_belagen_under_badkar__002",
+      "category": "VÅTUTRYMMEN",
+      "title": "Golvbrunnen är belägen under badkar",
+      "body": "Golvbrunnen är belägen under badkar. Förhållandet innebär att undertecknad inte kunnat inspektera kondition/utförandet på golv och golvbrunn. Kontroll ingår i en köpares undersökningsplikt.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__gjutjarnsbrunnar__003",
+      "category": "VÅTUTRYMMEN",
+      "title": "Gjutjärnsbrunnar",
+      "body": "Åldersstigna gjutjärnsbrunnar leder fukt kapilläriskt i rostlager. Det är i brunnen och mellan klämringar insugning sker mot golvkonstruktionen. Insugning sker sakta men har man täta material runt om brunnen hinner fuktigheten inte torka undan utan stannar kvar i golvet med ökad fuktighet och korrosion som följd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__rent_betonggolv_eller_klinker_golv_och_v__004",
+      "category": "VÅTUTRYMMEN",
+      "title": "Rent betonggolv eller klinker, golv och vägg, äldre",
+      "body": "Risken för allvarliga skador bedöms vara begränsad. Anledningen är att ytskikt är uppfäst på murverk och betong vilket inte utgör fuktkänsliga material.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__rost_i_golvbrunnen_g_b__005",
+      "category": "VÅTUTRYMMEN",
+      "title": "Rost i golvbrunnen G.B",
+      "body": "Rost i golvbrunnen noterades. Renovering kan eventuellt utföras (beroende på skicket) genom att man stålborstar/blästrar brunnen ren och relinar ytan med gummifärg som finns att köpa i välsorterade färgbutiker. Eller med ett företag som utför typgodkänd beläggningsmetod. Försäkringsbolaget bör rådfrågas angående gällande försäkringsskydd med åtgärdad respektive, inte åtgärdad golvbrunn.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__exempel_pa_foretag_som_utfor_denna_typ_a__006",
+      "category": "VÅTUTRYMMEN",
+      "title": "Exempel på företag som utför denna typ av renovering återfinns på www.remaljering.se",
+      "body": "Förhöjningsring i golvbrunnEn grundregel är att förhöjningsringen och golvbrunnen ska vara från samma tillverkare och vara framtagna för att fungera ihop. Ett felaktigt utförande utgör alltid risk för vattenskador. Bristande täthet vid förhöjningsringarna kan medföra risk för läckage och fuktskador i bakomliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__007",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Ursprunglig plastmatta finns under klinkerplattorna. Då ytskiktet i utrymmet består av klinker som lagts direkt på befintlig plastmatta kan vidhäftningen mellan klinker och plastmatta vara svår att uppnå. Risk finns att klinkerplattorna släpper från underlaget.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__008",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Golvbrunn av gjutjärn med anslutet tätskikt.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__009",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "I utrymmet finns en golvbrunn av gjutjärn med anslutet tätskikt. Gjutjärnets grova struktur gör det svårt att ansluta tätskiktet på ett rätt sätt, vilket innebär risk för läckage i anslutningen med fuktskador i omkringliggande konstruktioner som följd.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__vatutrymmen_fore_1988__010",
+      "category": "VÅTUTRYMMEN",
+      "title": "Våtutrymmen före 1988",
+      "body": "Badrummet bedöms vara utfört före 1988. Före 1988 fanns det inga krav på att en vägg i ett våtrum skulle vara vattentätt. Eftersom detta våtrum är byggt före denna tidpunkt är risken stor att det inte finns något tätskikt bakom väggkaklet. Detta kan leda till vattenskador i vägg och golvkonstruktionerna.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__rostig_golvbrunn__011",
+      "category": "VÅTUTRYMMEN",
+      "title": "Rostig golvbrunn",
+      "body": "Gjutjärnsbrunnen är rostangripen. För att undersöka om brunnen och dess anslutningar behöver bytas och om det finns några följdskador bör en fackman kontaktas.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__golvbrunn_inte_utbytt__012",
+      "category": "VÅTUTRYMMEN",
+      "title": "Golvbrunn inte utbytt",
+      "body": "Golvbrunnen är inte utbytt i samband med renoveringen. Golvbrunn ska vid ombyggnad eller renovering bytas ut om den är äldre än från 1990. Detta kan innebära att försäkringsbolaget endast lämnar ett begränsat försäkringsskydd för våtrummet alternativt undantar våtrummet från hemförsäkringen. Eventuellt försäkringsskydd får kontrolleras med respektive försäkringsbolag.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__forsakringsbolagsfraser__013",
+      "category": "VÅTUTRYMMEN",
+      "title": "Försäkringsbolagsfraser",
+      "body": "Detta kan innebära att försäkringsbolaget endast lämnar ett begränsat försäkringsskydd för detta våtrum alternativt undantar våtrummet från hemförsäkringen. Eventuellt försäkringsskydd får kontrolleras med respektive försäkringsbolag.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__014",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Det noterade utförande bedöms enligt undertecknad inte vara helt fackmässigt, vilket kan föranledainskränkningar i försäkringsskydd och/eller ersättningar vid eventuella skador samt öka risken förskador som mögel och röta. Eventuellt försäkringsskydd får kontrolleras med respektive försäkringsbolag.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__vatutrymmen_avskrivna__015",
+      "category": "VÅTUTRYMMEN",
+      "title": "Våtutrymmen avskrivna",
+      "body": "Eftersom ytskikten i XX och i XX bedöms vara ålders och försäkringsmässigt avskrivna bör dessa bytas ut eftersom det kan föreligga risk för fuktskador så som mögel och röta i bakomliggande konstruktioner till följd av bristande täthet. Noteringar under våtrum ovan utgör risk för vattenskador.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__kvalitetsdokument_krav_pa_kvalitetsdokum__016",
+      "category": "VÅTUTRYMMEN",
+      "title": "Kvalitetsdokument Krav på Kvalitetsdokument (Våtrumsintyg) från 1995",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "vatutrymmen__els__017",
+      "category": "VÅTUTRYMMEN",
+      "title": "els",
+      "body": "Iakttagelsetext:",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__018",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Kvalitetsdokument (s.k. Våtrumsintyg) saknas.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__avsaknad_av_kvalitetsdokument__019",
+      "category": "VÅTUTRYMMEN",
+      "title": "Avsaknad av Kvalitetsdokument",
+      "body": "Avsaknad av Kvalitetsdokument (krav enligt branschreglerna från 1995-10-01) innebär alltid en risk för att arbetet inte är fackmannamässigt utfört. Detta kan innebära att försäkringsbolaget endast lämnar ett begränsat försäkringsskydd för våtrummet alternativt undantar våtrummet från hemförsäkringen. Eventuellt försäkringsskydd får kontrolleras med respektive försäkringsbolag.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__020",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Riskanalys:\tDet noterade utförande bedöms enligt undertecknad inte vara fackmässigt utfört vilket kan öka risken för skador som mögel och röta i bakomliggande konstruktioner, det kan även föranleda inskränkningar i försäkringsskydd och/eller ersättningar vid eventuella skador eventuellt försäkringsskydd får kontrolleras med respektive försäkringsbolag.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__kvalitetsdokument_ska_sokas_av_koparen__021",
+      "category": "VÅTUTRYMMEN",
+      "title": "Kvalitetsdokument ska sökas av köparen",
+      "body": "Om kvalitetsdokument (krav enligt branschreglerna från 1995-10-01) inte finns, innebär det en risk för att arbetet inte är fackmannamässigt utfört. Detta kan innebära att försäkringsbolaget endast lämnar ett begränsat försäkringsskydd för våtrummet alternativt undantar våtrummet från hemförsäkringen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__egenhandigt_utforda_vatutrymmen__022",
+      "category": "VÅTUTRYMMEN",
+      "title": "Egenhändigt utförda våtutrymmen",
+      "body": "Om kvalitetsdokument (krav enligt branschreglerna från 1995-10-01) inte finns, innebär det en risk för att arbetet inte är fackmannamässigt utfört. Detta kan innebära att försäkringsbolaget endast lämnar ett begränsat försäkringsskydd för våtrummet alternativt undantar våtrummet från hemförsäkringen.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__tatskikt__023",
+      "category": "VÅTUTRYMMEN",
+      "title": "Tätskikt",
+      "body": "Iakttagelsetext:",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__024",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Tätskikt inte besiktningsbart. Automatisk iakttagelsetext vid kakel och klinker.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__025",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Våtrum utförda med kartonggips och rollat tätskikt och som inte uppfyller branschreglerna BBV 2007:1 är enligt SP ( Sveriges Provnings- och Forskningsinstitut) en riskkonstruktion pga. att ångtätheten i tätskiktet inte är tillräcklig vilket innebär att fukt kan tränga igenom tätskiktet och kan eller har orsakat fuktskador så som mögel och röta i bakomliggande konstruktioner.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__026",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Klämringar.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__027",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Klämringen har släppt i golvbrunnen. Risk för fukt/vattenskador så som mögel och röta föreligger.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__golvbrunnar__028",
+      "category": "VÅTUTRYMMEN",
+      "title": "Golvbrunnar",
+      "body": "Iakttagelsetext:",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__029",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Golvbrunn infälld i keramiska plattor. Alltid iakttagelsetext vid klinker.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__030",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Riskanalys:",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__031",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Vid renovering eller nyproduktion skall golvbrunnen, och eventuell förhöjningsring, vara typgodkänd enligt aktuell standard och vara vågrätt fast monterad i golvbjälklaget. Anslutning av tätskikt mot golvbrunnen skall ske enligt tätskiktstillverkarens monteringsanvisningar. Detta går inte att kontrollera vid en okulär besiktning, utförande enligt ovanstående kan endast verifieras genom Kvalitetsdokument eller utfästelse av den som utfört arbetet. Om utförandet avviker från dessa branschregler föreligger risk för fuktskador så som mögel och röta.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__032",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Våtutrymme ÖV: xxxx, klinker och kakel med golvvärme. Golvbrunn infälld i keramiska plattor. Metallram satt med fix med anl. av detta går det inte att kontrollera brunnsduken vid en okulär besiktning, utförande enligt ovanstående kan endast verifieras genom Kvalitetsdokument eller utfästelse av den som utfört arbetet. Om utförandet avviker från dessa branschregler föreligger risk för fuktskador så som mögel och röta.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__bakfall__033",
+      "category": "VÅTUTRYMMEN",
+      "title": "Bakfall",
+      "body": "Iakttagelsetext:",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__034",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Bakfall noterades i våtzonen (bad/duschutrymmet). Alltid riskanalys.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__bakfall_riskanalys__035",
+      "category": "VÅTUTRYMMEN",
+      "title": "Bakfall Riskanalys",
+      "body": "Förhållandet innebär att man kan misstänka att även undergolv lutar från golvbrunnen. Det är idag allmänt känt att om klinker/fogar och bruk ovan tätskiktet blir fuktmättat (vilket det med tiden blir) så kan vatten ledas/transporteras i bruket mot angränsande fuktkänsliga delar som därmed kan skadas om inte tätskiktet är intakt. Det kan föreligga risk för vattenskador så som mögel och röta i angränsande konstruktionsdelar. Förhållandet kan endast åtgärdas genom renovering.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__036",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Fackmässigt utfört.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__037",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Iakttagelsetext:",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__038",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Inredning av utrymmet bedöms vara icke fackmässigt utfört. Alltid riskanalys.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__riskanalys__039",
+      "category": "VÅTUTRYMMEN",
+      "title": "Riskanalys",
+      "body": "Inredning av utrymmet bedöms vara icke fackmässigt utfört. Ett felaktigt utförande utgör alltid risk för vattenskador så som mögel och röta. Renovering bör kalkyleras.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__otatheter_kring_rorgenomforingar_i_vagg__040",
+      "category": "VÅTUTRYMMEN",
+      "title": "Otätheter kring rörgenomföringar i vägg",
+      "body": "Bristande täthet vid noterade detaljer under iakttagelser i tvättstugan kan medföra risk för läckage och fuktskador så som mögel och röta i bakomliggande konstruktioner.",
+      "confidence": "medium"
+    },
+    {
+      "id": "vatutrymmen__untitled__041",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Förekommer utföranden från denna period skall renovering av utrymmet påräknas för att säkerställa att skador inte uppstår eller har uppstått pga. åldersslitage mm",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__042",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "En grundregel är att förhöjningsringen och golvbrunnen ska vara från samma tillverkare och vara framtagna för att fungera ihop.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__043",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "Golvbrunnens utförande går inte att bedöma, fix med anl. av detta går det inte att kontrollera brunnsduken vid en okulär besiktning, utförande enligt ovanstående kan endast verifieras genom Kvalitetsdokument eller utfästelse av den som utfört arbetet. Om utförandet avviker från dessa branschregler föreligger risk för fuktskador.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__044",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "1Bruk, fix, silicone i golvbrunn, ostädad golvbrunn m.m. med anl. av detta går det inte att kontrollera brunnsduken vid en okulär besiktning, utförande enligt ovanstående kan endast verifieras genom Kvalitetsdokument eller utfästelse av den som utfört arbetet. Om utförandet avviker från dessa branschregler föreligger risk för fuktrelaterade skador så som mögel, röta.",
+      "confidence": "low"
+    },
+    {
+      "id": "vatutrymmen__untitled__045",
+      "category": "VÅTUTRYMMEN",
+      "title": "",
+      "body": "2Oklart utförande i golvbrunnen. Utförande kan endast verifieras genom Kvalitetsdokument eller utfästelse av den som utfört arbetet. Om utförandet avviker från dessa branschregler föreligger risk för fuktrelaterade skador så som mögel och röta.",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__skvallermattor_under_vitvaror_diskbankss__001",
+      "category": "Bildbank",
+      "title": "Skvallermattor under vitvaror, diskbänksskåp",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "bildbank__underlagg__002",
+      "category": "Bildbank",
+      "title": "Underlägg",
+      "body": "Lämpligt montering av skvallerskydd under vitvaror. Om läckageskydd inte finns under vitvaror, diskbänksskåp är detta en risk ur fuktsynpunkt. Risk finns att vatten på grund av smygläckage från rörledningar, kopplingar m.m. inte upptäcks och tränger in i underliggande konstruktioner med fuktrelaterade skador som möjlig följd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__inspektionslucka__003",
+      "category": "Bildbank",
+      "title": "Inspektionslucka",
+      "body": "INCLUDEPICTURE \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://www.byggera.se/media/images/safe_vindstrappa_eI60.jpg\" \\* MERGEFORMATINET Vindstrappa",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__principskiss_nivellgolv__004",
+      "category": "Bildbank",
+      "title": "Principskiss Nivellgolv",
+      "body": "INCLUDEPICTURE \"http://www.beijerbygg.se/ImageVault/Images/conversionFormatType_Jpeg/compressionQuality_0/conversionFormat_23/width_100/height_80/id_3087/scope_1/ImageVaultHandler.aspx\" \\* MERGEFORMATINET left508000",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__overbleck__005",
+      "category": "Bildbank",
+      "title": "Överbleck",
+      "body": "INCLUDEPICTURE \"http://www.beijerbygg.se/ImageVault/Images/conversionFormatType_Jpeg/compressionQuality_0/width_100/height_80/id_45/scope_128/ImageVaultHandler.aspx\" \\* MERGEFORMATINET left698500",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__nockpanna__006",
+      "category": "Bildbank",
+      "title": "Nockpanna",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "bildbank__andnock__007",
+      "category": "Bildbank",
+      "title": "Ändnock",
+      "body": "INCLUDEPICTURE \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET  INCLUDEPICTURE  \"http://tbn2.google.com/images?q=tbn:NZe6j9qNsAXkkM:http://www.lagaskorsten.se/images/huv1.jpg\" \\* MERGEFORMATINET",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__skorstenshuv__008",
+      "category": "Bildbank",
+      "title": "Skorstenshuv",
+      "body": "Nedan texter i storlek 9 och i Arial lägger man i detta fält i protokollen, syftet är att upplysa om det specifika huset, t.ex. att det är en sommarstuga som permanentbebos…",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__400050064135000__009",
+      "category": "Bildbank",
+      "title": "400050064135000",
+      "body": "Äldre hus har oftast sämre isolerstandard.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__untitled__010",
+      "category": "Bildbank",
+      "title": "",
+      "body": "På grund av husets ålder finns ett begränsat klimatskydd i ytterväggar, fönster, dörrar, knäväggar, snedtak, vindsbjälklag. Det är vanligt med s.k. köldbryggor i ytterväggar och tak. Vid eventuella framtida tilläggsisoleringar bör man inhämta informationer om hur olika konstruktionsdelar påverkas (t.ex. vindar). Tilläggsisolering av äldre hus innebär oftast att man även bör se över inomhusventilationen",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__untitled__011",
+      "category": "Bildbank",
+      "title": "",
+      "body": "30 år ett nyckeltal för renoveringarEtt hus kräver kontinuerligt underhåll då alla byggnadsdelar utsätts för dagligt slitage För en fastighetsägare är 25-30 år erfarenhetsmässigt ett vanligt intervall vad gäller underhåll av konstruktionsdelar i en byggnad. 30 år är, enkelt uttryckt, ett nyckeltal för underhåll. De flesta hus har någon form av brister och fel i form av skador eller risk för skador. Lättast att upptäcka är skador i synliga delar som golv- och väggbeklädnader. Även de delar av byggnaden som man inte ser utsätts för dagligt slitage, exempelvis fuktisoleringen mot en källaryttervägg eller en dräneringsledning. Olika typer av fuktpåverkan är det vanligaste problemet.",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__byggnaden_ar_aldre__012",
+      "category": "Bildbank",
+      "title": "Byggnaden är äldre",
+      "body": "Byggnaden är äldre. Det är inte ovanligt att man vid renoveringar påträffar skador i konstruktionsdelar som inte går att upptäcka vid okulär kontroll. Det är dessutom mycket svårt att i efterhand hävda dolda fel i dessa typer av hus. Det kan förekomma fukt/rötskador samt skadeinsektsangrepp, t.ex. bakom fasadpanel, genomföringar och i anslutning till infästning balkonger och takkupor etc. Man bör lägga in detta i renoveringskalkylen. Äldre byggnader har normalt mycket god virkeskvalitet i både stomme och äldre fönster och är i de flesta fall är det ekonomiskt försvarbara att renovera. Vid framtida renoveringar erfordras således att man kontrollerar känsliga konstruktionsdelar, enligt ovan, så att inga äldre och/eller pågående skador byggs in.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__sektionsbyggt_hus__013",
+      "category": "Bildbank",
+      "title": "Sektionsbyggt hus",
+      "body": "Byggnaden är ett element-/sektionsbyggt hus. I dessa byggnader är det vanligt med sprickor och dragningar i tapeter, lokala golvlutningar, ojämnheter i anslutning till elementskarvar mm. Förhållandet innebär i normalfallet inga problem för husets goda bestånd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__30_ar_ett_nyckeltal_for_renoveringar__014",
+      "category": "Bildbank",
+      "title": "30 år ett nyckeltal för renoveringar",
+      "body": "För en fastighetsägare är 25-30 år erfarenhetsmässigt ett vanligt intervall vad gäller underhåll av konstruktionsdelar i en byggnad. 30 år är, enkelt uttryckt, ett nyckeltal för underhåll. Det innebär att om konstruktionsdelen är runt 30 år eller äldre, kan besiktningsmannen påpeka detta och påtala underhållsåtgärder.",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__untitled__015",
+      "category": "Bildbank",
+      "title": "",
+      "body": "Eftersom fukt-\"mögelrelaterade\" skador orsakade av markfukt är vanligt förekommande och oftast uppkommer pga att uppbyggnaden av t.ex. golven utförts med fuktkänsliga material bör man inhämta informationer om hur det lämpligen utförs innan man påbörjar eventuell renovering/inredning av golv-vägg konstruktioner som kan påverkas av naturlig markfukt. Idag finns det tekniska kunnandet för att kunna bygga fuktsäkert med eller utan golvvärme. Dessutom bör man beakta de ökade krav som idag ställs på inomhusventilationen. Detta blir extra viktigt vid eventuella framtida tilläggsisoleringar, tätningar etc. av byggnaden",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__untitled__016",
+      "category": "Bildbank",
+      "title": "",
+      "body": "Vissa äldre konstruktioner uppförda efter dåtidens byggpraxis och kunnande har i efterhand visat sig fungera mindre bra som t ex. inredda källare/krypgrunder dessa utgör sådana exempel. I byggbranschen kallas de riskkonstruktioner Analyser och förklaringar ges i utlåtandet under Riskanalys och under okulärbesiktning.",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__untitled__017",
+      "category": "Bildbank",
+      "title": "",
+      "body": "Ett hus kräver kontinuerligt underhåll då alla byggnadsdelar utsätts för dagligt slitage. De flesta hus har någon form av brister och fel i form av skador eller risk för skador. Lättast att upptäcka är skador i synliga delar som golv- och väggbeklädnader. För en fastighetsägare är 25-30 år erfarenhetsmässigt ett vanligt intervall vad gäller underhåll av konstruktionsdelar i en byggnad. 30 år är, enkelt uttryckt, ett nyckeltal för underhåll. Det innebär att om konstruktionsdelen är runt 30 år eller äldre, kan besiktningsmannen påpeka detta och påtala underhållsåtgärder.",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__for_fritidshus_galler_inte_samma_byggnor__018",
+      "category": "Bildbank",
+      "title": "För fritidshus gäller inte samma byggnormer som för permanenthus. Vanligtvis är underhållet",
+      "body": "på fritidshus utfört av husägaren, vilken inte alltid har det fackmässiga handlaget eller",
+      "confidence": "medium"
+    },
+    {
+      "id": "bildbank__untitled__019",
+      "category": "Bildbank",
+      "title": "",
+      "body": "kunnandet. Detta medför att vissa arbeten inte alltid är fackmässigt utförda.",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__untitled__020",
+      "category": "Bildbank",
+      "title": "",
+      "body": "Ett fritidshus har normalt sett klenare dimensioner och mindre isolering jämfört med byggnader uppförda för permanent boende och ofta saknas diffusionsspärr (plastfolie/papp) i stommen, vilket kan medföra att varm och fuktig inomhusluft vandrar ut i konstruktionerna och där orsakar fuktskador och då främst på vind.",
+      "confidence": "low"
+    },
+    {
+      "id": "bildbank__untitled__021",
+      "category": "Bildbank",
+      "title": "",
+      "body": "Ett fritidshus är vanligtvis inte byggt för den fuktbelastning ett permanentboende innebär med duschning, tvätt etc. Speciellt viktigt är det att inomhusventilationen fungerar och att förbättringsarbeten som t ex tilläggsisolering utförs på sådant sätt att problem med kondens eller andra fuktrelaterade skador inte uppkommer.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__001",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Obehandlade fuktfläckar i vägg i trapphus och undertak noterades. För bättre bedömning av dessa",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__002",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "erfordras konstruktionsingrepp.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__003",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Fastigheten försäljs av dödsbo vilket ger begränsad information med avseende på historik, underhåll och eventuella skador. Hänvisar till upprättad frågelista.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__fortsatt_teknisk_utredning__004",
+      "category": "Div iakttagelsefraser",
+      "title": "Fortsatt teknisk utredning",
+      "body": "En vidare undersökning av XX bör utföras för att klarlägga utbredning och för att se vilka åtgärder som anses nödvändiga.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__andtra_pa_panelen_ar_inte_malad__005",
+      "category": "Div iakttagelsefraser",
+      "title": "Ändträ på panelen är inte målad",
+      "body": "Ändträ på panelen är inte målad. Risk finns för ökat fuktupptag och med skador i panel. Lämpligt att målning/indränkning sker med träolja 3 ggr i ände därefter målning.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__sattningsfras__006",
+      "category": "Div iakttagelsefraser",
+      "title": "Sättningsfras",
+      "body": "Det förekommer mindre sprickor i grundmuren/källarväggen/fasaden/tegelfasaden. För att kontrollera huruvida sprickorna från eventuella rörelser i byggnaden är pågående eller inte, erfordras inborrning av dubbar i byggnadens sockel alt i anslutning till sprickor samt att precisionsavvägning av dubbarna utförs mot fast höjdfix. En sådan mätning bör ske regelbundet under minst ett år för att man ska kunna bedöma eventuella rörelser eller sättningar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__vid_framtida_planering_av_tradgard__007",
+      "category": "Div iakttagelsefraser",
+      "title": "Vid framtida planering av trädgård",
+      "body": "Vid framtida planering av trädgård vill undertecknad upplysa om att det inte lämpligt med fukthållande rabatter eller träd intill husgrunden (träd innebär alltid risk för att rötter växer in i dagvatten- och avloppsledningar och täpper till dessa)",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__innertak_papptak_vavspanda_tak__008",
+      "category": "Div iakttagelsefraser",
+      "title": "Innertak papptak, vävspända tak",
+      "body": "Småskador i vävspänd duk noterades. Ett sätt att laga småhål och sprickor i dessa tak är med s.k. ”japanpapper\" som man bygger modellflygplan med och tapetklister.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__kallare_dranering_oinredd_kallare__009",
+      "category": "Div iakttagelsefraser",
+      "title": "KÄLLARE dränering oinredd källare",
+      "body": "Vid nuvarande och fortsatt användande som oinredd källare (gäller inte inklädda rum) och om man samtidigt accepterar att med jämna mellanrum puts- och målningsbättra grundmurar, är min bedömning att man kan acceptera nuvarande fukt som förekommer i källarväggar och betonggolv. Fukten bedöms inte påverka byggnadens goda bestånd. Grundprincipen är dock att ingen inredning av källaren bör utföras utan att först omisolera och omdränera grunden samt att fritt vatten inte skall tränga in i källaren förstås.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__grundprincipen_for_att_undvika_mikrobiel__010",
+      "category": "Div iakttagelsefraser",
+      "title": "Grundprincipen för att undvika mikrobiella",
+      "body": "Grundprincipen för att undvika mikrobiella skador (dagligt tal mögel) i våra byggnader är att inget organiskt material typ träreglar, isolering etc. byggs in i fuktig miljö eller monteras direkt på betongplatta, grundmurar mm utan fuktskydd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__golv_tvarsaker_mogel_fukt_i_golvet_inte___011",
+      "category": "Div iakttagelsefraser",
+      "title": "Golv tvärsäker mögel/fukt i golvet, inte föreslå utredning",
+      "body": "Med anledning av att de tydliga indikationer som delas med uppdragsgivaren säljaren som erhållits om fuktrelaterade skador/lukter bedöms golvkonstruktionerna/mattor etc. vara i behov av utrivning och att betongytor fungicidbehandlas. Skall nyinredning utföras bör detta ske med s.k. fuktsäkra konstruktioner t.ex. diffusionsöppen målarfärg eller klinker utan fuktspärr eller mekaniskt ventilerat golv.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__vid_denna_typ_av_golvbjalklag__012",
+      "category": "Div iakttagelsefraser",
+      "title": "Vid denna typ av golvbjälklag",
+      "body": "Vid denna typ av golvbjälklag är det mycket viktigt med en väl fungerande dränering eftersom ökad fukt i mark eller dämning i dagvattensledningar kan medföra att vatten kapillärt \"sugs upp\" i betongplattan och skadar golv, syllar mm.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__013",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "En fukt- och klimatmässigt bättre lösning är en mekanisk ventilation vilket innebär att ventilationen blir styrd samt att ett undertryck skapas i byggnaden.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__vad_avser_vatten_och_avloppsinstallation__014",
+      "category": "Div iakttagelsefraser",
+      "title": "Vad avser vatten- och avloppsinstallationer brukar den försäkringsmässiga livslängden på dessa",
+      "body": "",
+      "confidence": "low",
+      "note": "title without body paragraph"
+    },
+    {
+      "id": "div_iakttagelsefraser__vara_ca_30_ar_for_exakt_forsakringsmassi__015",
+      "category": "Div iakttagelsefraser",
+      "title": "vara ca 30 år (för exakt försäkringsmässig avskrivning kontrollera respektive försäkringsbolags",
+      "body": "villkor i hemförsäkringen). Vår erfarenhetsmässiga bedömning är att verklig livslängd i normalfallet kan vara längre än den försäkringsmässiga.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__016",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Enligt säljare fungerar uppvärmningen i huset. Övrigt inget särskilt att notera som tyder på att det förekommer problem med systemet för uppvärmning.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__017",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Kontroll av till skorstenen anslutande delar ingår inte i besiktningen. En sådan kontroll, ur",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__018",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "brandsäkerhetssynpunkt, utförs av skorstensfejarmästaren.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__019",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Inget särskilt att notera som avviker från vad som får betraktas som normalt för konstruktionen.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__020",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Fastighetsägaren uppger att man eldat med jämna mellanrum och inte upplevt några problem med",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__021",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "detta.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__022",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Denna installation skall, vid rätt utförande, inte medföra några särskilda risker eller problem",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__uppmatning_kontroll_av_elsystemet_ar_int__023",
+      "category": "Div iakttagelsefraser",
+      "title": "(uppmätning/kontroll av elsystemet är inte utfört av undertecknad). Normalt saknas jordfelsbrytare,",
+      "body": "finns få jordade uttag och det kan saknas petsäkra stickkontakter. Vill man få en bättre bedömning",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__024",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "av elinstallationer krävs besiktning av behörig elektriker (s.k. el-besiktning).",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__025",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "Vindsutrymme ovan poolrummet är inte besiktningsbart. Eftersom klimatet i poolrummet är fuktigt, och ett tillskott av fukt upp på vindsutrymmet vintertid kan medföra stora mikrobiella skador erfordras att en lucka tas upp, lämpligtvis på gavel utvändigt och en kompletterande besiktning utförs för att kontrollera så att vinden inte har mikrobiella skador.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__026",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "För att utreda orsaken till och omfattningen av de fuktvärden som uppmättes i ytterväggssyllar och uppreglade golv samt den avvikande mikrobiella lukt som kändes vid golv/väggvinkel i vardagsrum erfordras att en fördjupad undersökning utförs. Det är viktigt att tänka på att denna rekommendation om fördjupad undersökningen gäller hela golv/väggkonstruktionen även om besiktningsmannen inte upptäckt några brister i ett visst rum eller viss byggnadsdel.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__uppreglade_golv_finns_i_den_inredda_del___027",
+      "category": "Div iakttagelsefraser",
+      "title": "Uppreglade golv finns i den inredda del som",
+      "body": "tidigare varit garage/förråd.",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__028",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "I fuktiga rum som poolrum är det av yttersta vikt att installerad avfuktare på ett energieffektivt sätt kan sköta avfuktningen ifråga.",
+      "confidence": "low"
+    },
+    {
+      "id": "div_iakttagelsefraser__om_man_onskar_en_battre_bedomning_kravs___029",
+      "category": "Div iakttagelsefraser",
+      "title": "Om man önskar en bättre bedömning krävs konstruktionsingrepp. Lämpligt är att montera",
+      "body": "inspektionsluckor (typ Hilaluckor) för att få information av förhållandet i väggen före köpet och för",
+      "confidence": "medium"
+    },
+    {
+      "id": "div_iakttagelsefraser__untitled__030",
+      "category": "Div iakttagelsefraser",
+      "title": "",
+      "body": "fortlöpande kontroller av förhållandet i väggarna och framtida underhållsbehov. Se även under not",
+      "confidence": "low"
+    },
+    {
+      "id": "el_fraser__untitled__001",
+      "category": "EL FRASER",
+      "title": "",
+      "body": "Lokalt noterades att det saknades lock för kopplingsdosor samt bristfälligt skyddade elledningar i dessa. Lämpligt att kopplingsdosor åtgärdas och färdigställs",
+      "confidence": "low"
+    },
+    {
+      "id": "el_fraser__untitled__002",
+      "category": "EL FRASER",
+      "title": "",
+      "body": "Med anledning av att undertecknad saknar el-behörighet så erfordras för bättre bedömning av elsystemet i ditt hus att kontroll utförs av fackman.",
+      "confidence": "low"
+    },
+    {
+      "id": "el_fraser__untitled__003",
+      "category": "EL FRASER",
+      "title": "",
+      "body": "Elinstallationer har delvis bytts ut i samband med renovering av kök/badrum/byte av uppvärmningssystem mm. Det finns äldre ledningar kvar i byggnaden där renovering inte har utförts, Äldre elledningarna bedöms som åldersmässigt förbrukade varför undertecknad lämpligt att status på elledningar fastställs via behörig installatör/ alt byts ut.",
+      "confidence": "low"
+    },
+    {
+      "id": "el_fraser__untitled__004",
+      "category": "EL FRASER",
+      "title": "",
+      "body": "Elinstallationer i våtrummet saknar erforderlig IP- märkning varför installationerna bedöms vara i behov av kontroll av behörig installatör.",
+      "confidence": "low"
+    },
+    {
+      "id": "el_fraser__untitled__005",
+      "category": "EL FRASER",
+      "title": "",
+      "body": "Elinstallationer bedöms i huvudsak vara ifrån 50-talet och äldre. Lämpligt att alla installationer kontrolleras av behörig installatör med avseende på renoveringsbehov.",
+      "confidence": "low"
+    },
+    {
+      "id": "el_fraser__untitled__006",
+      "category": "EL FRASER",
+      "title": "",
+      "body": "I kök, källare, garage och utomhus krävs jordade uttag.",
+      "confidence": "low"
+    },
+    {
+      "id": "el_fraser__untitled__007",
+      "category": "EL FRASER",
+      "title": "",
+      "body": "Det förekommer vägguttag som inte är petsäkra vilket kan innebära risk för personskada för barn.",
+      "confidence": "low"
+    },
+    {
+      "id": "altan__untitled__001",
+      "category": "Altan",
+      "title": "",
+      "body": "Altanen är motbyggd stommen, risk finns för fukttransport till fasad och stomme med fukt och",
+      "confidence": "low"
+    }
+  ]
+}
