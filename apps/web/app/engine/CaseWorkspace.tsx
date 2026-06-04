@@ -8,6 +8,7 @@ import type { CatalogLookup } from "@/lib/case/edits";
 import { useCase } from "./useCase";
 import { CaseChat } from "./CaseChat";
 import { CasePreview } from "./CasePreview";
+import { PhotoLoop } from "./PhotoLoop";
 
 type Entry = { title: string; body: string };
 
@@ -68,6 +69,14 @@ function LoadedWorkspace({ caseId, initial, entries, catalog }: { caseId: string
       <div className="grid gap-0 md:grid-cols-[2fr_3fr]">
         <div className="h-[70vh] border-r border-stone-200 p-3"><CaseChat doc={doc} onEdits={apply} /></div>
         <div className="h-[70vh] overflow-y-auto p-4"><CasePreview doc={doc} entries={entries} /></div>
+      </div>
+      <div className="border-t border-stone-200 p-3">
+        <details>
+          <summary className="cursor-pointer text-sm font-medium text-stone-700">Foton</summary>
+          <div className="mt-3">
+            <PhotoLoop onAddFinding={(id) => apply([{ op: "add_finding", section: "grundlaggning", notering_id: id }])} />
+          </div>
+        </details>
       </div>
     </div>
   );
