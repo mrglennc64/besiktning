@@ -1,4 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
+import type { Content, FunctionDeclaration } from "@google/genai";
 import { getCatalog, getMatchableEntries, type NoteringEntry } from "./noteringar";
 
 export interface PhotoMatch {
@@ -100,4 +101,30 @@ export async function matchPhotoToNoteringar(
       reasoning: m.reasoning,
     };
   });
+}
+
+export interface ToolCall { name: string; args: Record<string, unknown> }
+export interface ToolChatResult { functionCalls: ToolCall[]; text: string }
+
+/**
+ * One round-trip of a function-calling chat. Caller runs the loop: pass the
+ * running `contents`, get back either tool calls (execute, append a
+ * functionResponse, call again) or final text.
+ */
+export async function runToolChat(
+  systemInstruction: string,
+  contents: Content[],
+  tools: FunctionDeclaration[],
+): Promise<ToolChatResult> {
+  const genai = client();
+  const result = await genai.models.generateContent({
+    model: MODEL,
+    contents,
+    config: { systemInstruction, tools: [{ functionDeclarations: tools }] },
+  });
+  const calls = (result.functionCalls ?? []).map((c) => ({
+    name: c.name ?? "",
+    args: (c.args ?? {}) as Record<string, unknown>,
+  }));
+  return { functionCalls: calls, text: result.text ?? "" };
 }
