@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { SiteFooter, SiteHeader } from "@/app/components/SiteShell";
 import { getSession } from "@/lib/session";
 
-import { PhotoLoop } from "./PhotoLoop";
+import { CaseWorkspace } from "./CaseWorkspace";
 
 export const metadata = {
   title: "Valideringsmotor – Besiktning",
@@ -20,7 +20,7 @@ export default async function EnginePage() {
       <SiteHeader />
       <Hero email={user.email} />
       <section className="mx-auto max-w-6xl px-6 py-10">
-        <PhotoLoop />
+        <CaseWorkspace />
       </section>
       <SiteFooter />
     </main>
