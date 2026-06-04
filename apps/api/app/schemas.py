@@ -7,7 +7,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SCHEMA_DIR = REPO_ROOT / "packages" / "schemas"
 
-TEMPLATES = ("apartment", "smahus", "house")
+TEMPLATES = ("apartment", "smahus", "house", "overlatelse")
 
 
 @lru_cache(maxsize=8)

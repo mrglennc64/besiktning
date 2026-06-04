@@ -16,6 +16,7 @@ class Template(str, Enum):
     apartment = "apartment"
     smahus = "smahus"
     house = "house"
+    overlatelse = "overlatelse"
 
 
 class Status(str, Enum):
