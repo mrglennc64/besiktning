@@ -74,7 +74,7 @@ function LoadedWorkspace({ caseId, initial, entries, catalog }: { caseId: string
         <details>
           <summary className="cursor-pointer text-sm font-medium text-stone-700">Foton</summary>
           <div className="mt-3">
-            <PhotoLoop onAddFinding={(id) => apply([{ op: "add_finding", section: "grundlaggning", notering_id: id }])} />
+            <PhotoLoop onAddFinding={(id, photoName) => apply([{ op: "add_finding", section: "grundlaggning", notering_id: id, photo_refs: [photoName] }])} />
           </div>
         </details>
       </div>
