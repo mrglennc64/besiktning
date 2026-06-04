@@ -4,7 +4,7 @@
 export const API_URL =
   process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") || "http://127.0.0.1:8000";
 
-export type Template = "apartment" | "smahus" | "house";
+export type Template = "apartment" | "smahus" | "house" | "overlatelse";
 export type Status = "draft" | "review" | "final";
 
 export interface Protokoll {
