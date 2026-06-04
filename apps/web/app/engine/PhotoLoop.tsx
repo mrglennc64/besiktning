@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useRef, useState } from "react";
+import { prepareImage } from "@/lib/imagePrep";
 
 // Gemini free tier is 5 requests/minute for gemini-2.5-flash. We cap concurrent
 // in-flight requests, and on 429 we read Google's suggested retry delay from
@@ -72,21 +73,21 @@ interface PhotoEntry {
 let _uid = 0;
 const nextId = () => `p${++_uid}-${Date.now()}`;
 
-async function fileToBase64(file: File): Promise<string> {
-  const buf = await file.arrayBuffer();
-  let binary = "";
-  const bytes = new Uint8Array(buf);
-  for (let i = 0; i < bytes.byteLength; i++) binary += String.fromCharCode(bytes[i]);
-  return btoa(binary);
+function isImageFile(file: File): boolean {
+  if (file.type.startsWith("image/")) return true;
+  // iOS HEIC files sometimes arrive with an empty MIME type — accept by extension.
+  const name = file.name.toLowerCase();
+  return name.endsWith(".heic") || name.endsWith(".heif");
 }
 
 export function PhotoLoop() {
   const [photos, setPhotos] = useState<PhotoEntry[]>([]);
   const [dragOver, setDragOver] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const cameraRef = useRef<HTMLInputElement>(null);
 
   const addFiles = useCallback(async (fileList: FileList | File[]) => {
-    const files = Array.from(fileList).filter((f) => f.type.startsWith("image/"));
+    const files = Array.from(fileList).filter(isImageFile);
     if (files.length === 0) return;
     const entries: PhotoEntry[] = files.map((f) => ({
       id: nextId(),
@@ -112,17 +113,21 @@ export function PhotoLoop() {
       prev.map((p) => (p.id === id ? { ...p, status: { kind: "analyzing" } } : p)),
     );
     try {
-      const base64 = await fileToBase64(file);
+      const { base64, mime } = await prepareImage(file);
       const res = await fetch("/api/match-photo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ image_base64: base64, mime_type: file.type }),
+        body: JSON.stringify({ image_base64: base64, mime_type: mime }),
       });
       const bodyText = await res.text();
       if (!res.ok) {
-        // Gemini free-tier rate limit. Auto-retry using the suggested delay.
-        const is429 = res.status === 429 || /RESOURCE_EXHAUSTED|rate.*limit|quota/i.test(bodyText);
-        if (is429 && attempt < MAX_RETRIES) {
+        // Gemini free-tier rate limit (429) or transient overload (503).
+        // Auto-retry using the suggested delay / backoff.
+        const isRetryable =
+          res.status === 429 ||
+          res.status === 503 ||
+          /RESOURCE_EXHAUSTED|rate.*limit|quota|overloaded|unavailable/i.test(bodyText);
+        if (isRetryable && attempt < MAX_RETRIES) {
           const delayMs = parseRetryDelayMs(bodyText);
           const retryAtMs = Date.now() + delayMs;
           setPhotos((prev) =>
@@ -235,14 +240,28 @@ export function PhotoLoop() {
         dragOver={dragOver}
         onDrag={setDragOver}
         onPick={() => inputRef.current?.click()}
+        onCapture={() => cameraRef.current?.click()}
         onDrop={addFiles}
         photosCount={photos.length}
       />
       <input
         ref={inputRef}
         type="file"
-        accept="image/*"
+        accept="image/*,.heic,.heif"
         multiple
+        className="hidden"
+        onChange={(e) => {
+          if (e.target.files) addFiles(e.target.files);
+          e.target.value = "";
+        }}
+      />
+      {/* Separate camera input — capture="environment" opens the rear camera on
+          mobile. Kept distinct from the picker above so gallery/drag still work. */}
+      <input
+        ref={cameraRef}
+        type="file"
+        accept="image/*"
+        capture="environment"
         className="hidden"
         onChange={(e) => {
           if (e.target.files) addFiles(e.target.files);
@@ -278,12 +297,14 @@ function DropZone({
   dragOver,
   onDrag,
   onPick,
+  onCapture,
   onDrop,
   photosCount,
 }: {
   dragOver: boolean;
   onDrag: (v: boolean) => void;
   onPick: () => void;
+  onCapture: () => void;
   onDrop: (files: FileList) => void;
   photosCount: number;
 }) {
@@ -311,15 +332,24 @@ function DropZone({
           : "Lägg till fler foton."}
       </p>
       <p className="mt-1 text-sm text-stone-500">
-        JPG, PNG, HEIC. Flera filer åt gången går bra.
+        JPG, PNG, HEIC (iPhone-foton konverteras automatiskt). Flera filer åt gången går bra.
       </p>
-      <button
-        type="button"
-        onClick={onPick}
-        className="mt-4 rounded-full bg-stone-900 px-5 py-2 text-sm font-medium text-white hover:bg-stone-800"
-      >
-        Välj filer
-      </button>
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+        <button
+          type="button"
+          onClick={onPick}
+          className="rounded-full bg-stone-900 px-5 py-2 text-sm font-medium text-white hover:bg-stone-800"
+        >
+          Välj filer
+        </button>
+        <button
+          type="button"
+          onClick={onCapture}
+          className="rounded-full border border-stone-300 bg-white px-5 py-2 text-sm font-medium text-stone-700 hover:bg-stone-100"
+        >
+          Ta foto
+        </button>
+      </div>
     </div>
   );
 }

@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/sync-catalog.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/sync-catalog.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:catalog": "node scripts/sync-catalog.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.6.0",
+    "heic2any": "^0.0.4",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
@@ -25,6 +29,9 @@
     "typescript": "^5"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["@google/genai", "protobufjs"]
+    "onlyBuiltDependencies": [
+      "@google/genai",
+      "protobufjs"
+    ]
   }
 }
