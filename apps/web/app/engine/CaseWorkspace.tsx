@@ -59,12 +59,47 @@ export function CaseWorkspace() {
 
 function LoadedWorkspace({ caseId, initial, entries, catalog }: { caseId: string; initial: CaseDoc; entries: Map<string, Entry>; catalog: CatalogLookup }) {
   const { doc, apply, status } = useCase(caseId, initial, catalog);
+  const [exporting, setExporting] = useState(false);
   const name = doc.parter_och_uppdrag.fastighet_namn || "Nytt ärende";
+
+  async function exportWord() {
+    setExporting(true);
+    try {
+      const res = await fetch("/api/case-export", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ case: doc, filename: `utlatande-${name}` }),
+      });
+      if (!res.ok) throw new Error(await res.text().catch(() => `HTTP ${res.status}`));
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `utlatande-${name.replace(/[^a-z0-9_-]/gi, "_")}.docx`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      alert(`Export misslyckades: ${e instanceof Error ? e.message : String(e)}`);
+    } finally {
+      setExporting(false);
+    }
+  }
+
   return (
     <div className="rounded-xl border border-stone-200 bg-white">
       <div className="flex items-center justify-between border-b border-stone-200 px-4 py-2">
         <span className="font-medium">Ärende: {name}</span>
-        <span className="text-xs text-stone-400">{status === "saving" ? "Sparar…" : status === "saved" ? "Sparat" : status === "error" ? "Kunde ej spara" : ""}</span>
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-stone-400">{status === "saving" ? "Sparar…" : status === "saved" ? "Sparat" : status === "error" ? "Kunde ej spara" : ""}</span>
+          <button
+            type="button"
+            onClick={() => void exportWord()}
+            disabled={exporting}
+            className="rounded-full bg-emerald-700 px-3 py-1 text-xs font-medium text-white hover:bg-emerald-800 disabled:opacity-40"
+          >
+            {exporting ? "Exporterar…" : "Exportera (Word)"}
+          </button>
+        </div>
       </div>
       <div className="grid gap-0 md:grid-cols-[2fr_3fr]">
         <div className="h-[70vh] border-r border-stone-200 p-3"><CaseChat doc={doc} onEdits={apply} /></div>
