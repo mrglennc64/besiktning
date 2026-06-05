@@ -3,8 +3,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { api } from "@/lib/api";
 import { emptyCase } from "@/lib/case/template";
+import { sectionForCategory } from "@/lib/case/sectionForCategory";
 import type { CaseDoc } from "@/lib/case/types";
 import type { CatalogLookup } from "@/lib/case/edits";
+import type { ProtokollSummary } from "@/lib/api";
 import { useCase } from "./useCase";
 import { CaseChat } from "./CaseChat";
 import { CasePreview } from "./CasePreview";
@@ -12,11 +14,49 @@ import { PhotoLoop } from "./PhotoLoop";
 
 type Entry = { title: string; body: string };
 
+function isPlainObject(v: unknown): v is Record<string, unknown> {
+  return typeof v === "object" && v !== null && !Array.isArray(v);
+}
+
+/** Deep-merge `patch` onto `base`: nested objects merge recursively, arrays and
+ * scalars from `patch` replace the corresponding value in `base`. */
+function deepMerge<T>(base: T, patch: unknown): T {
+  if (!isPlainObject(base) || !isPlainObject(patch)) {
+    return (patch === undefined ? base : (patch as T));
+  }
+  const out: Record<string, unknown> = { ...base };
+  for (const [key, value] of Object.entries(patch)) {
+    out[key] = deepMerge((base as Record<string, unknown>)[key], value);
+  }
+  return out as T;
+}
+
+/** Overlay stored protokoll data onto a complete empty case so missing/partial
+ * sections never break the preview. */
+function hydrate(data: Record<string, unknown>): CaseDoc {
+  return deepMerge(emptyCase(), data);
+}
+
 export function CaseWorkspace() {
   const [caseId, setCaseId] = useState<string | null>(null);
   const [initial, setInitial] = useState<CaseDoc | null>(null);
   const [entries, setEntries] = useState<Map<string, Entry>>(new Map());
   const [creating, setCreating] = useState(false);
+  const [cases, setCases] = useState<ProtokollSummary[]>([]);
+
+  // Load existing överlåtelse cases for the picker. Errors → empty list.
+  useEffect(() => {
+    void api
+      .listProtokoll()
+      .then((rows) => setCases(rows.filter((p) => p.template === "overlatelse")))
+      .catch(() => {});
+  }, []);
+
+  async function openCase(id: string) {
+    const p = await api.getProtokoll(id);
+    setInitial(hydrate(p.data));
+    setCaseId(id);
+  }
 
   // Load the catalog once (titles + bodies for the preview + lookup).
   useEffect(() => {
@@ -46,11 +86,32 @@ export function CaseWorkspace() {
 
   if (!caseId || !initial) {
     return (
-      <div className="rounded-xl border border-stone-200 bg-white p-8 text-center">
-        <p className="text-stone-700">Inget ärende öppet.</p>
-        <button type="button" onClick={() => void createCase()} disabled={creating} className="mt-4 rounded-full bg-stone-900 px-5 py-2 text-sm font-medium text-white disabled:opacity-40">
-          {creating ? "Skapar…" : "Nytt ärende"}
-        </button>
+      <div className="rounded-xl border border-stone-200 bg-white p-8">
+        <div className="text-center">
+          <p className="text-stone-700">Inget ärende öppet.</p>
+          <button type="button" onClick={() => void createCase()} disabled={creating} className="mt-4 rounded-full bg-stone-900 px-5 py-2 text-sm font-medium text-white disabled:opacity-40">
+            {creating ? "Skapar…" : "Nytt ärende"}
+          </button>
+        </div>
+        {cases.length > 0 && (
+          <div className="mx-auto mt-8 max-w-md text-left">
+            <h2 className="text-sm font-medium text-stone-700">Mina ärenden</h2>
+            <ul className="mt-3 divide-y divide-stone-200 rounded-lg border border-stone-200">
+              {cases.map((c) => (
+                <li key={c.id}>
+                  <button
+                    type="button"
+                    onClick={() => void openCase(c.id)}
+                    className="flex w-full items-center justify-between px-4 py-3 text-left text-sm hover:bg-stone-50"
+                  >
+                    <span className="font-medium text-stone-800">{c.number}</span>
+                    <span className="text-xs text-stone-400">{c.updated_at.slice(0, 10)}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     );
   }
@@ -109,7 +170,7 @@ function LoadedWorkspace({ caseId, initial, entries, catalog }: { caseId: string
         <details>
           <summary className="cursor-pointer text-sm font-medium text-stone-700">Foton</summary>
           <div className="mt-3">
-            <PhotoLoop onAddFinding={(id, photoName) => apply([{ op: "add_finding", section: "grundlaggning", notering_id: id, photo_refs: [photoName] }])} />
+            <PhotoLoop onAddFinding={(id, photoName, category) => apply([{ op: "add_finding", section: sectionForCategory(category), notering_id: id, photo_refs: [photoName] }])} />
           </div>
         </details>
       </div>

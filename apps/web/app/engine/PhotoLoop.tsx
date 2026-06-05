@@ -80,7 +80,7 @@ function isImageFile(file: File): boolean {
   return name.endsWith(".heic") || name.endsWith(".heif");
 }
 
-export function PhotoLoop({ onAddFinding }: { onAddFinding?: (notering_id: string, photoName: string) => void } = {}) {
+export function PhotoLoop({ onAddFinding }: { onAddFinding?: (notering_id: string, photoName: string, category: string) => void } = {}) {
   const [photos, setPhotos] = useState<PhotoEntry[]>([]);
   const [dragOver, setDragOver] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -174,7 +174,7 @@ export function PhotoLoop({ onAddFinding }: { onAddFinding?: (notering_id: strin
       const entry = photos.find((p) => p.id === photoId);
       if (entry && entry.status.kind === "ready") {
         const m = entry.status.matches[matchIndex];
-        onAddFinding(m.notering_id, entry.file.name);
+        onAddFinding(m.notering_id, entry.file.name, m.category);
       }
     }
   }
