@@ -8,9 +8,15 @@
 import {
   AlignmentType,
   Document,
+  Footer,
+  Header,
   HeadingLevel,
+  ImageRun,
   Packer,
+  PageNumber,
   Paragraph,
+  Tab,
+  TabStopType,
   TextRun,
 } from "docx";
 import type { CaseDoc, Finding, Section4 } from "./types";
@@ -20,6 +26,68 @@ export interface CatalogEntryText {
   body: string;
 }
 export type EntryMap = Map<string, CatalogEntryText>;
+
+export interface ExportDocxOptions {
+  /** Optional PNG logo bytes, embedded in the header. */
+  logo?: Uint8Array;
+}
+
+const FOOTER_CONTACT =
+  "SynaHus i Sverige AB · Finnboda Kajväg 15, 131 72 Nacka · Tel: 070-441 24 40 · E-post: carina@synahus.se · Org.nr: 559113–1403 · Bg: 5207–3814 · www.synahus.se";
+
+/** Per-page header: company name (and optional logo) left, fastighet + page right. */
+function buildHeader(doc: CaseDoc, opts?: ExportDocxOptions): Header {
+  const fastighet = doc.parter_och_uppdrag.fastighet_namn || "Utlåtande";
+  const children: Paragraph[] = [];
+
+  if (opts?.logo) {
+    children.push(
+      new Paragraph({
+        children: [
+          new ImageRun({
+            type: "png",
+            data: opts.logo,
+            transformation: { width: 120, height: 40 },
+          }),
+        ],
+      }),
+    );
+  }
+
+  children.push(
+    new Paragraph({
+      tabStops: [{ type: TabStopType.RIGHT, position: 9000 }],
+      children: [
+        new TextRun({ text: "SynaHus i Sverige AB", bold: true }),
+        new Tab(),
+        new TextRun({ text: `${fastighet} · Sida ` }),
+        new TextRun({ children: [PageNumber.CURRENT] }),
+      ],
+    }),
+  );
+
+  return new Header({ children });
+}
+
+/** Per-page footer: grey contact line + page-of-total line. */
+function buildFooter(): Footer {
+  return new Footer({
+    children: [
+      new Paragraph({
+        children: [new TextRun({ text: FOOTER_CONTACT, size: 16, color: "888888" })],
+      }),
+      new Paragraph({
+        children: [
+          new TextRun({ text: "Sida ", size: 16, color: "888888" }),
+          new TextRun({ children: [PageNumber.CURRENT], size: 16, color: "888888" }),
+          new TextRun({ text: " (", size: 16, color: "888888" }),
+          new TextRun({ children: [PageNumber.TOTAL_PAGES], size: 16, color: "888888" }),
+          new TextRun({ text: ")", size: 16, color: "888888" }),
+        ],
+      }),
+    ],
+  });
+}
 
 const FACT_LABELS_1: Record<string, string> = {
   fastighet_namn: "Fastighet",
@@ -102,7 +170,7 @@ function factBlock(obj: Record<string, unknown>, labels: Record<string, string>)
 }
 
 /** Build the in-memory Word document for a case. */
-export function buildUtlatande(doc: CaseDoc, entries: EntryMap): Document {
+export function buildUtlatande(doc: CaseDoc, entries: EntryMap, opts?: ExportDocxOptions): Document {
   const c: Paragraph[] = [];
 
   // Title
@@ -192,10 +260,25 @@ export function buildUtlatande(doc: CaseDoc, entries: EntryMap): Document {
   }
   c.push(body(doc.parter_och_uppdrag.besiktningsman ?? ""));
 
-  return new Document({ sections: [{ children: c }] });
+  return new Document({
+    styles: {
+      default: {
+        document: {
+          run: { font: "Calibri", size: 22 },
+        },
+      },
+    },
+    sections: [
+      {
+        headers: { default: buildHeader(doc, opts) },
+        footers: { default: buildFooter() },
+        children: c,
+      },
+    ],
+  });
 }
 
 /** Render the case to a .docx byte buffer. */
-export async function renderUtlatandeDocx(doc: CaseDoc, entries: EntryMap): Promise<Buffer> {
-  return Packer.toBuffer(buildUtlatande(doc, entries));
+export async function renderUtlatandeDocx(doc: CaseDoc, entries: EntryMap, opts?: ExportDocxOptions): Promise<Buffer> {
+  return Packer.toBuffer(buildUtlatande(doc, entries, opts));
 }

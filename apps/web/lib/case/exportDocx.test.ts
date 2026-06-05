@@ -24,4 +24,17 @@ describe("exportDocx", () => {
     // .docx is a zip — first two bytes are "PK".
     expect(buf.subarray(0, 2).toString("latin1")).toBe("PK");
   });
+
+  it("renders a branded .docx buffer with a logo", async () => {
+    // Minimal 1x1 PNG so ImageRun has valid bytes.
+    const logo = new Uint8Array(
+      Buffer.from(
+        "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+        "base64",
+      ),
+    );
+    const buf = await renderUtlatandeDocx(emptyCase(), entries, { logo });
+    expect(Buffer.isBuffer(buf)).toBe(true);
+    expect(buf.subarray(0, 2).toString("latin1")).toBe("PK");
+  });
 });
