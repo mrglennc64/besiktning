@@ -17,7 +17,6 @@ when there's actually a need for it.
 from __future__ import annotations
 
 import logging
-import os
 import secrets
 from collections.abc import Iterable
 from datetime import UTC, datetime, timedelta
@@ -43,7 +42,7 @@ def _now() -> datetime:
 
 
 def _admin_email() -> str | None:
-    return os.environ.get("ADMIN_EMAIL")
+    return settings.admin_email or None
 
 
 def _is_admin(email: str) -> bool:
@@ -227,7 +226,7 @@ async def require_admin(user: CurrentUser = Depends(current_user)) -> CurrentUse
 def send_magic_link(email: str, token: str) -> None:
     """v1: print to stdout (real SMTP/Resend later). Uvicorn's default logging
     config swallows module-level INFO, so print is the most reliable dev stand-in."""
-    base = os.environ.get("WEB_BASE_URL", "http://localhost:3000")
+    base = settings.web_base_url
     link = f"{base}/auth/verify?token={token}"
     print(
         "\n" + "=" * 72
@@ -258,7 +257,7 @@ async def password_login(body: PasswordLoginRequest) -> Session:
     Only valid if the email matches ADMIN_EMAIL and ADMIN_PASSWORD is set.
     Magic-link is still the canonical flow for non-admin / production use.
     """
-    expected_pw = os.environ.get("ADMIN_PASSWORD")
+    expected_pw = settings.admin_password or None
     admin = _admin_email()
     if not expected_pw or not admin:
         raise HTTPException(

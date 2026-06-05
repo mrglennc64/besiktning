@@ -14,8 +14,19 @@ class Settings(BaseSettings):
     """
 
     database_url: str = ""
-    cors_origins: list[str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
+    cors_origins: list[str] = [
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:3004",
+        "http://127.0.0.1:3004",
+    ]
     default_user_initials: str = "GC"
+
+    # Auth. admin_email + admin_password enable the password login (admin only).
+    # web_base_url is where magic links point (dev server port).
+    admin_email: str = ""
+    admin_password: str = ""
+    web_base_url: str = "http://localhost:3000"
 
     model_config = SettingsConfigDict(
         env_file=".env",
